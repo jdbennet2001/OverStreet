@@ -174,7 +174,7 @@ def story_arc_details(directory, story_arcs, api_key):
     
     
    
-def comic_vine_results(url, api_key, query={}, timeout=30):
+def comic_vine_results(url, api_key, query={}, timeout=7.5):
     PAGE_SIZE = 100
     offset = 0
 
