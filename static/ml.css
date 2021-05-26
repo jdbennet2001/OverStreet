@@ -16,6 +16,10 @@ div {box-sizing: border-box;}
 }
 
 .main-screen div{
+    /*  */
+}
+
+.blue{
     border: 1px solid blue
 }
 
@@ -57,6 +61,8 @@ div {box-sizing: border-box;}
     justify-content: flex-start;
     align-content: stretch;
     align-items: stretch;
+
+    max-height: 80%
 }
 
 .browser .left { 
@@ -71,15 +77,25 @@ div {box-sizing: border-box;}
     justify-content: flex-start;
     align-content: stretch;
     align-items: center;
+
+    overflow-y: scroll;
 }
 
-.browser .left img{
+ .cover-image{
     display: block;
     max-width:230px;
     max-height:250px;
     width: auto;
     height: auto;
     margin: 20px;
+}
+
+.browser .right .pub-main{
+    border: 5px green solid
+}
+
+.browser .right .pub-other{
+    border: 5px red solid
 }
 
 .browser .left .title{
@@ -89,6 +105,8 @@ div {box-sizing: border-box;}
 
 .browser .right{
     flex: 1 1 auto;
+
+    overflow-y: scroll;
   
 }
 
@@ -140,16 +158,6 @@ div {box-sizing: border-box;}
     align-self: auto;
 }
 
-.suggestion .cover img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    max-width: 100px;
-    max-height: 125px;
-
-    cursor: pointer;
-}
 
 .suggestion .details{
     flex: 1 1 auto;
@@ -182,4 +190,8 @@ div {box-sizing: border-box;}
     margin-left: 5px;
     flex: 1 1 auto;
     overflow-y: scroll;
+}
+
+.trade {
+    color: coral
 }

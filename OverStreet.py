@@ -6,7 +6,7 @@ import io
 
 from flask import Flask, render_template, send_from_directory, send_file, request
 
-from web.web_app import comic, update_model
+from web.web_app import comic, comics, set_state
 from lib.comic import extract_cover
 from urllib.parse import unquote
 
@@ -20,6 +20,18 @@ app.debug = True
 def index():
     return render_template("index.html")
 
+# Return a list of all comics to be processed
+@app.route('/comics')
+def comics_handler():
+    return comics()
+
+# Return information about a single comic
+@app.route('/comic/<comic_basename>')
+def comic_handler(comic_basename):
+    comic_key = unquote(unquote(comic_basename)) 
+    return comic(comic_key)
+
+# Return the cover for a given comic
 @app.route("/cover/<cover>")
 def get_cover(cover):
     location = unquote(unquote(cover)) 
@@ -32,6 +44,7 @@ def get_cover(cover):
         filename = 'static/blank-cover.jpg'
         return send_file(filename, mimetype='image/jpg')
 
+# Return a cached (downloaded) file from the 'covers' tree
 @app.route("/file/<cover>")
 def get_file(cover):
     location = unquote(unquote(cover)) 
@@ -43,17 +56,15 @@ def get_file(cover):
         filename = 'static/blank-cover.jpg'
         return send_file(filename, mimetype='image/jpg')
 
-# Return data about the next comic to be processed
-@app.route('/comic/<offset>')
-def get_next(offset):
-    issue = comic(int(offset))
-    return issue
 
+
+        
+# Update the model
 @app.route('/classify', methods=['POST'])
 def classify():
     content = request.get_json(silent=True)
     print(f'Classify event: {content}')
-    update_model(content)
+    set_state(content['key'], content['state'])
     return {'response' : 200}
 
 @app.after_request

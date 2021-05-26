@@ -1,45 +1,69 @@
-import pathlib
+
+from posixpath import dirname
+import sys
 import json
 
-from os import path
+from os import path, rename
+from pathlib import Path
 
-directory = pathlib.Path(__file__).parent.absolute()
-modelLocation = path.join( directory, 'model.json')
-queueLocation = path.join( directory, 'queue.json')
+proj_path = path.abspath('.')
+sys.path.append(proj_path)  # VSCode hackery, ensure project relative imports work
 
-# Load data
-if path.exists(modelLocation):
-    with open(modelLocation) as f:
-        model = json.load(f)
-else:
-    model = {}
+proj_path = path.abspath('..')
+sys.path.append(proj_path)  # VSCode hackery, ensure project relative imports work
 
+from lib.comic import add_tag, convert_to_zip
 
+from redis import Redis
+rs = Redis()
 
-with open(queueLocation) as f:
-    queue = json.load(f)
-
-# Filter out existing data
-queue = [x for x in queue if x['basename'] not in model]
+REDIS_DATA = 'score-data'
+REDIS_TAG  = 'queue-tag'
+REDIS_SKIP = 'queue-skip'
 
 
-# Returns the next comic in the queue, from queue.json c
-# Defined as [ {location: ... , basename: ..., suggestions: [...]}]
-def comic(offset=0):
+# Returns a list of all comics waiting to be filed
+def comics():
+    keys = rs.hkeys(REDIS_DATA)
+    # Redis returns byte data, decode as utf-8
+    keys = [x.decode('utf-8') for x in keys]
+
+    # Remove any comics that are already processed
+    keys = [x for x in keys if is_pending(x)]
+    
+    # And return a dict. Lists aren't supported
+    return { 'keys' : keys }
+
+def is_pending(key):
+    data =rs.hget(REDIS_DATA, key)
+    profile = json.loads(data)
+    return profile['state'] == 'pending'
+
+# Return information about a single comic in the queue
+def comic(key):
+    data = rs.hget(REDIS_DATA, key)
+    return json.loads(data)
 
 
-    issue = queue.pop()
+def set_state(key, status):
+    data =rs.hget(REDIS_DATA, key)
+    profile = json.loads(data)
+    profile['state'] = status
+    rs.hset(REDIS_DATA, key, json.dumps(profile))
 
-    issue['remaining'] = len(queue)
+    # Dump data for debugging
+    results = []
+    for key in rs.hkeys(REDIS_DATA):
+        entry = rs.hget(REDIS_DATA, key)
+        results.append( json.loads(entry))
 
-    return issue
+    with open('score.json', 'w') as outfile:
+        json.dump(results, outfile, indent=4) 
 
 
-# We know stuff about a comic, let's store it in the model.json file
-def update_model(data):
 
-    model[ data['issue'] ] = data['id']
 
-    with open(modelLocation, 'w') as outfile:
-        json.dump(model, outfile, indent=4)
+
+    
+
 

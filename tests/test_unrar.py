@@ -1,4 +1,5 @@
-from os import path, mkdir, rename, listdir, stat
+from os import path, mkdir, rename, listdir, stat, remove
+import sys
 
 # Note, unrar requires a seperate installation documented here: https://pypi.org/project/unrar/
 from unrar import rarfile
@@ -6,6 +7,13 @@ from shutil import rmtree, make_archive
 
 import time
 
+proj_path = path.abspath('.')
+sys.path.append(proj_path)  # VSCode hackery, ensure project relative imports work
+
+proj_path = path.abspath('..')
+sys.path.append(proj_path)  # VSCode hackery, ensure project relative imports work
+
+from lib.comic import convert_to_zip
 
 import imagehash   
 import io
@@ -37,36 +45,15 @@ def test_covert():
     cbr_path = path.abspath(cbr_path)
 
     # Gen a test directory
-    seed = time.time()
-    tmpdir = path.join(test_path, f'data/{seed}')
-    mkdir(tmpdir)
-
-    # Extract files to tmpdir
-    rar = rarfile.RarFile(cbr_path)
-    rar.extractall(path=tmpdir)
-
-    # Are they there?
-    files = listdir(tmpdir)
-
-    assert "Injustice - Year Zero (2020-) 006-013.jpg" in files
-
-    # Zip things up
-    zip_path = path.join( test_path, f'data/{seed}')
-    make_archive(zip_path, 'zip', tmpdir)
-
-    # Clean up old files
-    rmtree( tmpdir )
-
-    # Get the extension right
-    r = cbz_path = path.join( test_path, f'data/{seed}.cbz')
-    rename( f'{zip_path}.zip', cbz_path )
-
-    assert path.exists(cbz_path)
+    cbz_path = convert_to_zip(cbr_path, remove_old=False)
 
     cbz_size = stat(cbz_path).st_size
     cbr_size = stat(cbr_path).st_size
 
     assert cbz_size == approx(cbr_size, rel=0.1) # allow 10% deviation between archive types
+
+    # Clean up
+    remove(cbz_path)
 
     pass
 
