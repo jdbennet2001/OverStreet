@@ -11,3 +11,6 @@ Comics classification code that uses a mix of image algorithms and ML to identif
 | cb-classify | Walk a directory containing comics and generate a JSON file outlining ML matches for later use | cb-classify --dir ..  -out ...          |
 
 
+### System architecture
+
+![Data Pipeline](./diagrams/data pipeline.png)
