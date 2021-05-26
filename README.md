@@ -13,4 +13,4 @@ Comics classification code that uses a mix of image algorithms and ML to identif
 
 ### System architecture
 
-![Data Pipeline](./diagrams/data pipeline.png)
+![Data Pipeline](/diagrams/data-pipeline.png)
