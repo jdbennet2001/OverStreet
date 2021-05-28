@@ -12,7 +12,7 @@ import sys
 import imagehash 
 
 from PIL import Image
-from os import path, listdir
+from os import path, listdir, remove
 
 proj_path = path.abspath('.')
 sys.path.append(proj_path)  # VSCode hackery, ensure project relative imports work
@@ -48,9 +48,10 @@ Issue data is stored in a single directory, with files labeled {YYYY-MM}.json
 '''
 def importVolumes(disk):
 
-
     directory = path.abspath( path.join( disk, 'education/data/comic-vine/volumes' ) )
     files = listdir(directory)
+
+    files = [x for x in files if x.endswith('json')]
 
     # We have data, let's create the table
     createVolumesTable()
@@ -59,7 +60,7 @@ def importVolumes(disk):
 
     for i, file in enumerate(files):
 
-        with open(path.join(directory, file), "r") as read_file:
+        with open(path.join(directory, file), "r", encoding='utf-8') as read_file:
             volumes = json.load(read_file)
 
         print( f'==> {i}/{len(files)} ==> (volumes) ==> {file}')
@@ -80,7 +81,6 @@ def importVolume(curr, record):
 
     id = str(record['id']), 
     name = record['name']
-
 
     try:
         publisher = record.get('publisher', {}).get('name', 'Other')
@@ -105,6 +105,7 @@ def importVolume(curr, record):
 
 
 def createIssuesTable():
+
     cur = conn.cursor()
 
     # Drop existing table, if available
@@ -126,13 +127,20 @@ def importIssues(disk):
     directory = path.abspath( path.join( disk, 'education/data/comic-vine/issues' ) )
     files = listdir(directory)
 
+    files = [x for x in files if x.endswith('.json')]
+    files.reverse()
+
     # We have data, let's create the table
     createIssuesTable()
 
     for i, file in enumerate(files):
 
-        with open(path.join(directory, file), "r") as read_file:
-            issues = json.load(read_file)
+        try:
+            with open(path.join(directory, file), "r",  encoding='utf-8') as read_file:
+                issues = json.load(read_file)
+        except Exception as e:
+            print( f'Bad file: {file}, {e}')
+            remove( path.join(directory, file) )
 
         print( f'==> {i}/{len(files)} ==> (issues) ==> {file}')
 
@@ -238,7 +246,7 @@ def importHashes(disk):
     files = contents(directory)
 
     # Filter out just the covers
-    all_covers = [x for x in files if x.endswith('jpg') ]
+    all_covers = [x for x in files if x.endswith('jpg') and not 'AppleDouble' in x]
 
     # Grab the existing hash list and find what
     new_covers = [ x for x in all_covers if not path.basename(x) in hashes ]
