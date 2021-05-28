@@ -20,7 +20,7 @@ Python services are primarily implemented as set of command line scripts:
 | cb-classify | Walk a directory containing comics and generate a JSON file outlining ML matches for later use | 
 
 
-###UnRAR Support###
+### Launch Configuration ###
 
 ```
     {
