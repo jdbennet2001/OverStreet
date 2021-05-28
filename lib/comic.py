@@ -171,13 +171,14 @@ def convert_to_zip(path_to_archive, remove_old=True):
 
     # Check that the new file is roughly the same size as the old one
     delta = (abs(cbz_size - cbr_size) / cbr_size)
+    delta_percent = {str(round(delta*100, 2))}
 
-    if (delta > 0.1):
-        raise Exception(f'Unable to convert {path_to_archive}, input size {cbr_size}, output {cbz_size}')
+    if (delta > 0.2):
+        raise Exception(f'Unable to convert {path_to_archive}, input size {cbr_size}, output {cbz_size}, {delta_percent}')
 
     # Delete the input file
     if remove_old:
-        print(f' ==> removing ==> {path_to_archive}, size delta => {str(round(delta*100, 2))}%')
+        print(f' ==> removing ==> {path_to_archive}, size delta => %')
         remove(path_to_archive)
 
     return target_zip

@@ -45,7 +45,7 @@ def pipeline(directory):
     comics = [x for x in files if x.endswith('cbz') or x.endswith('cbr')]
 
     # Classification model
-    model = load_model()
+    # model = load_model()
 
     # Comic Vine issue / volume information
     cvIssues = hashes()
@@ -71,7 +71,7 @@ def pipeline(directory):
             if labled(comic):
                 match = match_by_label(comic)
             else:
-                match = match_by_cover(comic, cvIssues, model)
+                match = match_by_cover(comic, cvIssues)
 
             # Have we seen this before? Check if it's already labeled
             state = 'labeled' if  labled(comic) else 'pending'
@@ -79,7 +79,7 @@ def pipeline(directory):
             # Find comic vine entries that pass a reasonable threshold
             result =  {'location' : comic,  'comic': basename, 'state' : state,  'page_count': page_count, 'match' : match.copy()}
             rs.hset( REDIS_DATA, basename, json.dumps(result) )
-            print( f" ==> {match['volume_name']}, {match['issue_number']} ==> distance: {match['distance']}, score: {match['score']}")
+            print( f" ==> {match['volume_name']}, {match['issue_number']} ==> distance: {match['distance']}")
 
         except Exception as e:
             print( f' ==> Exception {e}')
@@ -118,7 +118,7 @@ def match_by_label(comic):
     match = issueSummary(volume_number, issue_number)
     return match
 
-def match_by_cover(comic, cvIssues, model):
+def match_by_cover(comic, cvIssues):
 
     hash = cover_hash(comic)
     page_count = pages(comic)
@@ -128,7 +128,7 @@ def match_by_cover(comic, cvIssues, model):
     candidates = [candidate for candidate in cvIssues if intersection(basename, candidate['volume_name'])]
 
     # Find the scores for each candidate
-    scores = [ score(basename, page_count, hash, x, model) for x in candidates]
+    scores = [ score(basename, page_count, hash, x) for x in candidates]
 
     # Find the best matches
     def get_distance(x):
@@ -175,7 +175,7 @@ def issueNumber(comic):
     ['pages', 'distance', 'volume_count_of_issues', 'first_issue', 'DC', 'Marvel']
    and use that to identify matches (> 95% certainty) between a new image and the database
 '''
-def score(name, page_count, cover_hash, cvIssue, model ):
+def score(name, page_count, cover_hash, cvIssue ):
 
 
 
@@ -190,9 +190,9 @@ def score(name, page_count, cover_hash, cvIssue, model ):
     first_issue = cvIssue['issue_number'] == str(1)
     vector = [page_count, distance, volume_count_of_issues, first_issue, DC, Marvel]
     sample = np.array([vector])
-    scores =model.predict_proba(sample)[0]
-    (miss, hit) = scores    # Returns numpy.float32 values, convert to native types
-    cvIssue['score'] = hit.item()
+    # scores =model.predict_proba(sample)[0]
+    # (miss, hit) = scores    # Returns numpy.float32 values, convert to native types
+    # cvIssue['score'] = hit.item()
     cvIssue['distance'] = distance
     return cvIssue
  
