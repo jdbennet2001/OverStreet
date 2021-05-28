@@ -178,7 +178,7 @@ def convert_to_zip(path_to_archive, remove_old=True):
 
     # Delete the input file
     if remove_old:
-        print(f' ==> removing ==> {path_to_archive}, size delta => %')
+        print(f' ==> removing ==> {path_to_archive}, size delta => {delta_percent}%')
         remove(path_to_archive)
 
     return target_zip
