@@ -4,10 +4,11 @@ cb* utilities
 import zipfile
 import tempfile
 import json
+from pathlib import PurePosixPath
 from redis import Redis
 
 from unrar import rarfile
-from os import path, listdir, remove, stat, rename
+from os import path, stat, remove, stat, rename, utime
 
 from lib.bytes import humanbytes
 from lib.contents import contents
@@ -98,52 +99,49 @@ def _pages_rar(archive):
     return images
 
 TAG_FILE = 'tags.json'
+HASH_FILE = 'pending.json'
 
 def has_tag(path_to_archive):
 
-    if path_to_archive.endswith('cbz'):
-        pagelist = _pages_zip(path_to_archive)
-    elif path_to_archive.endswith('cbr'):
-        pagelist = _pages_rar(path_to_archive)
+    # Assume ZIP archives
+    with zipfile.ZipFile(path_to_archive, 'r') as myzip:
+        pagelist = myzip.namelist()
 
-    return TAG_FILE in pagelist
+        return TAG_FILE in pagelist or HASH_FILE in pagelist
 
-def add_tag(tag_data, path_to_archive):
+def add_tag(tag_data, path_to_archive, tag_file=TAG_FILE):
 
     with tempfile.TemporaryDirectory() as tmpdirname:
-        path_to_tmp_file = path.join(tmpdirname, TAG_FILE)
+        path_to_tmp_file = path.join(tmpdirname, tag_file)
 
         with open(path_to_tmp_file, 'w') as outfile:
-            json.dump(tag_data, outfile)
+            json.dump(tag_data, outfile, indent=4)
 
-        print( f'==> tag ==> {path_to_tmp_file} ==> {path_to_archive}')
+        print( f' ==> tag ==> {path.basename(path_to_tmp_file)} ==> {path_to_archive}')
         insert( path_to_tmp_file, path_to_archive)
         
         
 
 def insert( path_to_file, path_to_archive):
 
-    # Implicitly transform cbr files to cbz as they're being tagged
-    if path_to_archive.endswith('cbr'):
-        path_to_archive = convert_to_zip(path_to_archive)
-
-    if path_to_archive.endswith('cbz'):
+    try:
         zip = zipfile.ZipFile(path_to_archive,'a')
         zip.write(path_to_file, path.basename(path_to_file))
         zip.close()
-
-    else:
-        raise Exception(f'Unsupported archive type for file insert: {path_to_archive}') 
-
+    except Exception as e:
+        print( f'Exception tagging {path_to_archive}, {e}')
+    
  
 def convert_to_zip(path_to_archive, remove_old=True):
 
-    if path_to_archive.endswith('cbz'):
-        return path_to_archive # Nothing to do...
+    path_to_archive = path.abspath(path_to_archive)
+    (stem, ext) = path.splitext(path_to_archive)
 
+    tmp_zip = f'{stem}._zip' 
+    target_zip = f'{stem}.cbz'
+  
     cbr_size = stat(path_to_archive).st_size
-    target_zip = path_to_archive.replace('cbr', 'cbz')
-
+  
     print( f' ==> converting {path_to_archive} ({humanbytes(cbr_size)})==> to cbz')
 
     # Make temporary directory
@@ -158,52 +156,30 @@ def convert_to_zip(path_to_archive, remove_old=True):
 
         print( f' ==> extracted {len(files)} files to ==> {tmpdirname}')
 
-        zip = zipfile.ZipFile(target_zip,'w')
+        zip = zipfile.ZipFile(tmp_zip,'w')
         for i, file in enumerate(files):
-            print(f' <==  {path.basename(target_zip)} <== adding <== {i}/{len(files)} <== {path.basename(file)}')
+            print(f' <==  {path.basename(tmp_zip)} <== adding <== {i}/{len(files)} <== {path.basename(file)}')
             path_to_file = path.join(tmpdirname, file)
-            zip.write(path_to_file, file)
+            zip.write(path_to_file, path.basename(file))
         zip.close()
 
-    cbz_size = stat(target_zip).st_size
-    print( f' <== done {target_zip} ({humanbytes(cbz_size)})')
-    
+    cbz_size = stat(tmp_zip).st_size
+    print( f' <== done {tmp_zip} ({humanbytes(cbz_size)})')
 
     # Check that the new file is roughly the same size as the old one
     delta = (abs(cbz_size - cbr_size) / cbr_size)
-    delta_percent = {str(round(delta*100, 2))}
+    delta_percent = str(round(delta*100, 2))
 
-    if (delta > 0.2):
-        raise Exception(f'Unable to convert {path_to_archive}, input size {cbr_size}, output {cbz_size}, {delta_percent}')
+    if (delta > 0.50):
+        raise Exception(f'Unable to convert {path_to_archive},  {delta_percent}% difference in file sizes')
 
     # Delete the input file
-    if remove_old:
-        print(f' ==> removing ==> {path_to_archive}, size delta => {delta_percent}%')
-        remove(path_to_archive)
+    remove(path_to_archive)
+    rename(tmp_zip, target_zip)
 
     return target_zip
 
-def tag_perf(key):
-    data = rs.hget(REDIS_DATA, key)
-    entry =  json.loads(data)
 
-    location = entry['location']
-    match = entry['match']
-
-    # We only support cbz files
-    if location.endswith('cbr'):
-        location = convert_to_zip(location)
-
-    # Cover names have a set format
-    path_to_target = path.join( path.dirname(location), target_name(match) )
-
-    print( f' ==> rename {location} ==> {path_to_target}')
-
-    rename( location, path_to_target)
-
-    add_tag(match, path_to_target)
-
-    return {'from' : location, 'to' : path_to_target}
 
 # What should this archive be called?
 def target_name(metadata):

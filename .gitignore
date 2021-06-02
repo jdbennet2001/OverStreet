@@ -131,6 +131,7 @@ dmypy.json
 scratch/**
 web/*.json
 samples.json
+tags.json
 
 #Editor
 .vscode

@@ -4,6 +4,7 @@ Classify waiting (on-deck) comics using difference hashing and persisted model
 This is the main utility of the program. It's used to file comics.
 '''
 
+from posixpath import basename
 import sys
 import io
 import json
@@ -11,11 +12,10 @@ import time
 import imagehash
 import argparse
 import pickle
+import filetype
 import numpy as np
 
-from os import path, getcwd
-from math import floor
-from PIL import Image
+from os import path, getcwd,  utime, stat
 from redis import Redis
 
 proj_path = path.abspath('.')
@@ -26,7 +26,7 @@ sys.path.append(proj_path)  # VSCode hackery, ensure project relative imports wo
 
 from lib.db import hashes, issueSummary
 from lib.contents import contents
-from lib.comic import  pages,  has_tag, convert_to_zip
+from lib.comic import  pages,  has_tag, convert_to_zip, add_tag
 from lib.pipeline import cover_hash, hamming, intersection
 
 rs = Redis()
@@ -37,15 +37,11 @@ REDIS_DATA = 'score-data'
 
 def pipeline(directory):
 
-    # Prep the files
-    convert_files(directory)
-
     # Get the new list...
     files = contents(directory)
-    comics = [x for x in files if x.endswith('cbz') or x.endswith('cbr')]
 
-    # Classification model
-    # model = load_model()
+    # Drop manga, not classifiable
+    comics = [x for x in files if not 'manga' in x]
 
     # Comic Vine issue / volume information
     cvIssues = hashes()
@@ -55,67 +51,93 @@ def pipeline(directory):
     for i, comic in enumerate(comics):
         print( f'==> {i}/{len(comics)} ==> processing ==> {path.basename(comic)}')
 
+
         try:
+            
+            mtime = path.getmtime(comic) 
+
+            comic = convert_file(comic)
+
             basename = path.basename(comic)
 
-            if rs.hexists(REDIS_DATA, basename ):
+            if rs.hexists(REDIS_DATA, comic):
                 print( f'==> skipping ==> {basename} ==> redis')
+                continue
+
+            if type(comic) != 'zip':
+                print( f'==> skipping ==> {basename} ==> bad type')
                 continue
 
             if has_tag(comic):
                 print( f'==> skipping ==> {basename} ==> tagged')
                 continue
 
-            page_count = pages(comic)
+            is_labeled = labled(comic)
 
-            if labled(comic):
+            if is_labeled:
                 match = match_by_label(comic)
+                
+                # Good enough, tag it now
+                add_tag(match, comic, 'tag.json') 
+
             else:
                 match = match_by_cover(comic, cvIssues)
 
-            # Have we seen this before? Check if it's already labeled
-            state = 'labeled' if  labled(comic) else 'pending'
+                # Save to Redis for later review
+                rs.hset(REDIS_DATA, comic, json.dumps(match))
+
+            set_file_modification_time(comic, mtime)
 
             # Find comic vine entries that pass a reasonable threshold
-            result =  {'location' : comic,  'comic': basename, 'state' : state,  'page_count': page_count, 'match' : match.copy()}
-            rs.hset( REDIS_DATA, basename, json.dumps(result) )
-            print( f" ==> {match['volume_name']}, {match['issue_number']} ==> distance: {match['distance']}")
+            print( f" ==> {match['volume_name']}, {match['issue_number']} (labeled = {is_labeled}) ==> distance: {match['distance']}\n\n\n")
 
         except Exception as e:
             print( f' ==> Exception {e}')
 
-    results = []
-    for key in rs.hkeys(REDIS_DATA):
-        entry = rs.hget(REDIS_DATA, key)
-        results.append( json.loads(entry))
+    results = {}
 
-    with open('filing.json', 'w') as outfile:
-        json.dump(results, outfile, indent=4)  
+    for key in rs.hkeys(REDIS_DATA):
+        string_data = rs.hget(REDIS_DATA, key)
+        results[key.decode('utf-8')] = json.loads(string_data)
+
+    with open("tags.json", "w") as tags_file:
+        json.dump(results, tags_file, indent=4)            
+
+
+def set_file_modification_time(filename, mtime):
+    """
+    Set the modification time of a given filename to the given mtime.
+    mtime must be a datetime object.
+    """
+    st = stat(filename)
+    atime = st.st_atime
+    utime(filename, times=(atime, mtime))
 
 # Tagging works best with CBZ files, walk the directory converting all RAR archives prior to scanning
-def convert_files(directory):
+def convert_file(file):
 
-    # Find all comics
-    files = contents(directory)
+    extension = type(file)
+    if extension == 'rar':
+        print( f' ==> {extension} ==> {path.basename(file)} ==> converting')
+        return convert_to_zip(file, remove_old=True)
+    else:
+        print( f' ==> {extension} ==>  {path.basename(file)} ==> no coversion')
+        return file
 
-    # Convert cbr to cbz
-    cbrs = [x for x in files if x.endswith('cbr')]
 
-    print(f'Converting cbr => cbz, {len(cbrs)} files in the queue')
-    
-    for i, cbr in enumerate(cbrs):
-        try:
-            print(f'==> Pipeline conversion, {i}/{len(cbrs)}')
-            convert_to_zip(cbr, remove_old=True)
-        except Exception as e:
-            print( f'==> Conversion error ==> {e} for ==> {cbr}')
-
-    return cbrs
+def type(path_to_archive):
+    try:
+         extension = filetype.guess(path_to_archive).extension
+         return extension
+    except Exception as e:
+        print( f' ==> {path_to_archive} ==> Invalid File Type')
+        return None
 
 def match_by_label(comic):
     issue_number = issueNumber(comic)
     volume_number = volumeNumber(comic)
     match = issueSummary(volume_number, issue_number)
+    match['distance'] = None
     return match
 
 def match_by_cover(comic, cvIssues):
@@ -146,7 +168,7 @@ def labled(comic):
     try:
         issue_number = issueNumber(comic)
         volume_number = volumeNumber(comic)
-        return volume_number and issue_number
+        return volume_number is not None and issue_number is not None
     except:
         return False
 
