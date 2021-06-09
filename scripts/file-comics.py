@@ -21,13 +21,12 @@ sys.path.append(proj_path)  # VSCode hackery, ensure project relative imports wo
 from lib.contents import contents
 from lib.comic import type, has_tag, get_tags
 
-ON_DECK_DIRECTORY = 'unfiled'   # Where are the new comics?
+ON_DECK_DIRECTORY = 'on-deck'   # Where are the new comics?
 
 PUBLISHER_DIRECTORIES = ['DC Comics', 'Marvel', 'Other']
 
 def execute(catalog):
 
-    
     volumes = getVolumes(catalog)
 
     # Find comics that need to be filed
@@ -38,15 +37,18 @@ def execute(catalog):
     Marvel_series = listdir( path.join(catalog, 'Marvel') )
     Other_series = listdir( path.join(catalog, 'Other') )
 
+
+    print( f'----------- filing {len(comics)} comics ------------')
+
     for comic in comics:
 
         tags = get_tags(comic)
         if ( tags['publisher'] == 'DC Comics'):
-            move(comic, DC_series, path.join(catalog, 'DC Comics'), tags)
-        elif ( tags['publisher'] == 'DC Comics'):
-            move( comic, Marvel_series, path.join(catalog, 'Marvel'), tags )
+            move(comic, DC_series, path.join(catalog, 'DC Comics'), tags, volumes)
+        elif ( 'Marvel' in tags['publisher'] ):
+            move( comic, Marvel_series, path.join(catalog, 'Marvel'), tags, volumes )
         else:
-            move(comic, Other_series, path.join(catalog, 'Other'), tags )
+            move(comic, Other_series, path.join(catalog, 'Other'), tags, volumes )
 
     pass
 
@@ -68,9 +70,6 @@ def getVolumes(catalog):
         rs.hset(VOLUME_KEY, volume, path.dirname(comic) )
 
     return rs.hgetall(VOLUME_KEY)
-    
-
-
 
 # Returns the volume number from a given comic's parent directory
 def volumeNumber(comic):
@@ -81,35 +80,68 @@ def volumeNumber(comic):
         volume = volumes[0].lstrip('(').rstrip(')')
         return volume
 
+TRADE_COUNT_PAGE_THRESHOLD = 112
+
 # Basic filing logic
 def move(comic, series, directory, tags, volumes):
     volume_id = tags['volume_id']
     volume_name = tags['volume_name']
     volume_start = tags['volume_start']
+    page_count = tags['page_count']
+
     basename = path.basename(comic)
+    series_dir = find_series(series, volume_name)
+
+    # Trade paperbacks have a special filing structure
+    if page_count >= TRADE_COUNT_PAGE_THRESHOLD:
+        if series_dir:
+            target = path.join( directory, series_dir, f'Trades/{basename}')
+        else:
+            target = path.join( directory, volume_name, f'Trades/{basename}')
+        return mv (comic, target, 'trade')
 
     # Use Volume ID
     if volume_id in volumes:
         volume_directory = volumes[volume_id]
         target = path.join( volume_directory, basename)
-        return mv( comic, target )
+        return mv( comic, target, 'volume insert' )
 
     # Use series
-    series_dir = next(folder for folder in series if volume_name in folder)
+    
     if series_dir is not None:
-        target = path.join( series_dir, basename)
-        return mv( comic, target )
+        target = path.join( directory, series_dir, f'{volume_name} {volume_start} ({volume_id})/{basename}')
+        volumes[volume_id] = path.dirname(target)
+        return mv( comic, target, 'series insert' )
 
     # Generate new entry
-    target = path.join( directory, f'{directory}/{volume_name} {volume_start} ({volume_id})/{basename}' )
-    mv( comic, target )
+    target = path.join( directory, f'{directory}/{volume_name}/{volume_name} {volume_start} ({volume_id})/{basename}' )
+    volumes[volume_id] = path.dirname(target)
+    series.append(volume_name)
+    mv( comic, target, 'series new' )
 
+def find_series(series, volume_name):
+
+  folders = [folder for folder in series if folder in volume_name]
+
+  # There might be multiple matches, find the longest one 
+  folders.sort(key=len, reverse=True)
+
+  if  folders:
+      return folders[0]
+  else:
+      return None
     
 
-def mv(source, destination):
-    print( f' ==> {source} ==> {destination}')
-    # makedirs( path.dirname(destination), exist_ok=True)
-    # shutil.move(source, destination)
+def mv(source, destination, reason='sys-call'):
+
+    # Remove non-ascii characters
+    destination = destination.replace(':', '-')
+    destination = destination.replace('?', '')
+    destination = destination.replace('"', '-')
+
+    print( f' ==>{reason} ==>  {path.basename(source)} ==> {destination}')
+    makedirs( path.dirname(destination), exist_ok=True)
+    shutil.move(source, destination)
 
 # Return a list of all comics in the queue
 def waiting_comics(catalog):
