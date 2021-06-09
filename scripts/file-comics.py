@@ -101,7 +101,7 @@ def move(comic, series, directory, tags, volumes):
         return mv( comic, target )
 
     # Generate new entry
-    target = path.join( directory, f'{directory}/{volume_name} {volume_start} ({volume_id}/{basename}' )
+    target = path.join( directory, f'{directory}/{volume_name} {volume_start} ({volume_id})/{basename}' )
     mv( comic, target )
 
     
