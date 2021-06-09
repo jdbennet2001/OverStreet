@@ -108,6 +108,8 @@ def move(comic, series, directory, tags, volumes):
 
 def mv(source, destination):
     print( f' ==> {source} ==> {destination}')
+    # makedirs( path.dirname(destination), exist_ok=True)
+    # shutil.move(source, destination)
 
 # Return a list of all comics in the queue
 def waiting_comics(catalog):
