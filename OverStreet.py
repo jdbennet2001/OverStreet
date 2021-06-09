@@ -6,9 +6,10 @@ import io
 
 from flask import Flask, render_template, send_from_directory, send_file, request
 
-from web.web_app import comic, comics, set_state
-from lib.comic import extract_cover
+from web.web_app import comic, comics, tag, skip
+from lib.comic import add_tag, extract_cover, target_name
 from urllib.parse import unquote
+from os import rename, path
 
 
 # set the project root directory as the static folder, you can set others.
@@ -64,7 +65,14 @@ def get_file(cover):
 def classify():
     content = request.get_json(silent=True)
     print(f'Classify event: {content}')
-    set_state(content['key'], content['state'])
+    key = content['key']
+    state = content['state']
+
+    if state == 'match': 
+        tag(key)
+    else:
+        skip(key)
+
     return {'response' : 200}
 
 @app.after_request

@@ -31,10 +31,10 @@ async function next(){
     .then((response) => { return response.json() })
     .catch((err) => { console.log(err)})
 
-    let {comic, location, page_count, match} = data;
+    let {basename, comic, page_count, match} = data;
 
-    await renderIssue(comic, location, page_count)
-    await renderSuggestion( match )
+    await renderIssue(basename, comic, page_count)
+    await renderSuggestion( data )
 
     $('#count').text(`(${keys.length})`)
 
@@ -43,7 +43,7 @@ async function next(){
 
 async function renderIssue(basename, location, page_count){
 
-    let path_to_comic = location.replace('Storage', 'LocalDASD')
+    let path_to_comic = location.replace('Storage', 'Seagate Expansion Drive')
     let image = `/cover/${encodeURIComponent(encodeURIComponent(path_to_comic))}`
 
     let trade_class = page_count >= 100 ? 'trade' : 'single'
@@ -59,9 +59,9 @@ async function renderIssue(basename, location, page_count){
 
 async function renderSuggestion(match){
 
-    let {cover_date, description, publisher, id, month, url, issue_number, volume_count_of_issues, volume_name, name} = match
+    let {cover_date, distance, description, publisher, id, month, url, issue_number, volume_count_of_issues, volume_name, name} = match
     
-    let image = `/Volumes/LocalDASD/education/data/comic-vine/covers/${month}/${id}.jpg`
+    let image = `/Volumes/Seagate Expansion Drive/education/data/comic-vine/covers/${month}/${id}.jpg`
         image = encodeURIComponent(image)
         image = encodeURIComponent(image)
 
@@ -81,7 +81,8 @@ async function renderSuggestion(match){
         $('<div>', { html: `<span class='column'>Title:</span> ${name}`, class: 'summary-line'}).appendTo(details);
         $('<div>', { html: `<span class='column'>Publisher:</span> ${publisher}`, class: 'summary-line'}).appendTo(details);
         $('<div>', {html: `<span class='column'> Details: <a href="${url}">${id}</a> </span>`, class: 'summary-line'}).appendTo(details)
-       
+        $('<div>', { html: `<span class='column'>Distance:</span> ${distance}`, class: 'summary-line'}).appendTo(details);
+
         $('<div>', {html: description, class: 'summary-line'}).appendTo(details)
 }
 

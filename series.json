@@ -1,0 +1,3845 @@
+[
+    {
+        "name" : "1000000",
+        "series" : "DC One Million"
+    },
+    {
+        "name": "1st Issue Special",
+        "series": "1st Issue Special"
+    },
+    {
+        "name": "52",
+        "series": "52"
+    },
+    {
+        "name": "80 Page Giant",
+        "series": "80 Page Giant"
+    },
+    {
+        "name": "Action Comics",
+        "series": "Action Comics"
+    },
+    {
+        "name": "Adam Strange",
+        "series": "Adam Strange"
+    },
+    {
+        "name": "Adventure Comics",
+        "series": "Adventure Comics"
+    },
+    {
+        "name": "All New Collectors  Edition",
+        "series": "All New Collectors  Edition"
+    },
+    {
+        "name": "All-American Comics",
+        "series": "Golden Age"
+    },
+    {
+        "name": "All-Star Comics",
+        "series": "All-Star Comics"
+    },
+    {
+        "name": "All-Star Squadron",
+        "series": "All-Star Squadron"
+    },
+    {
+        "name": "All-Star Western",
+        "series": "Limited Series"
+    },
+    {
+        "name": "Ambush Bug",
+        "series": "Ambush Bug"
+    },
+    {
+        "name": "Anima",
+        "series": "Anima"
+    },
+    {
+        "name": "Animal Man",
+        "series": "Animal Man"
+    },
+    {
+        "name": "Aquaman",
+        "series": "Aquaman"
+    },
+    {
+        "name": "Arsenal",
+        "series": "Arsenal"
+    },
+    {
+        "name": "Atom",
+        "series": "Atom"
+    },
+    {
+        "name": "Azrael",
+        "series": "Azrael"
+    },
+    {
+        "name": "Batgirl",
+        "series": "Batgirl"
+    },
+    {
+        "name": "Batman",
+        "series": "Batman"
+    },
+    {
+        "name": "Batwing",
+        "series": "Batwing"
+    },
+    {
+        "name": "Batwoman",
+        "series": "Batwoman"
+    },
+    {
+        "name": "Beast Boy",
+        "series": "Teen Titans"
+    },
+    {
+        "name": "Birds of Prey",
+        "series": "Birds of Prey"
+    },
+    {
+        "name": "Bizarro",
+        "series": "Bizarro"
+    },
+    {
+        "name": "Black Adam",
+        "series": "Black Adam"
+    },
+    {
+        "name": "Black Canary",
+        "series": "Black Canary"
+    },
+    {
+        "name": "Black Lightning",
+        "series": "Black Lightning"
+    },
+    {
+        "name": "Blackest Night",
+        "series": "Blackest Night"
+    },
+    {
+        "name": "Blue Beetle",
+        "series": "Blue Beetle"
+    },
+    {
+        "name": "Bombshells",
+        "series": "Limited Series"
+    },
+    {
+        "name": "Booster Gold",
+        "series": "Booster Gold"
+    },
+    {
+        "name": "Brightest Day",
+        "series": "Brightest Day"
+    },
+    {
+        "name": "Caper",
+        "series": "Caper"
+    },
+    {
+        "name": "Captain Atom",
+        "series": "Captain Atom"
+    },
+    {
+        "name": "Captain Carrot",
+        "series": "Captain Carrot"
+    },
+    {
+        "name": "Catwoman",
+        "series": "Catwoman"
+    },
+    {
+        "name": "Cave Carson",
+        "series": "Cave Carson"
+    },
+    {
+        "name": "Challengers of the Unknown",
+        "series": "Challengers of the Unknown"
+    },
+    {
+        "name": "Chase",
+        "series": "Chase"
+    },
+    {
+        "name": "Checkmate",
+        "series": "Checkmate"
+    },
+    {
+        "name": "Chronos",
+        "series": "Chronos"
+    },
+    {
+        "name": "Comic Cavalcade",
+        "series": "Golden Age"
+    },
+    {
+        "name": "Constantine",
+        "series": "Constantine"
+    },
+    {
+        "name": "Convergence",
+        "series": "Convergence"
+    },
+    {
+        "name": "Countdown",
+        "series": "Countdown"
+    },
+    {
+        "name": "Crisis on Infinite Earths",
+        "series": "Crisis on Infinite Earths"
+    },
+    {
+        "name": "Crisis on Multiple Earths",
+        "series": "Crisis on Multiple Earths"
+    },
+    {
+        "name": "Damage",
+        "series": "Damage"
+    },
+    {
+        "name": "Dark Knight",
+        "series": "Batman"
+    },
+
+    {
+        "name": "Dark Nemesis",
+        "series": "Dark Nemesis"
+    },
+    {
+        "name": "Darkstars",
+        "series": "Darkstars"
+    },
+    {
+        "name": "Day of Judgment",
+        "series": "Day of Judgment"
+    },
+    {
+        "name": "Day of Vengeance",
+        "series": "Day of Vengeance"
+    },
+    {
+        "name": "DC - The New Frontier",
+        "series": "DC - The New Frontier"
+    },
+    {
+        "name": "DC 100-Page Super Spectacular",
+        "series": "Reprints"
+    },
+    {
+        "name": "DC Comics Presents",
+        "series": "DC Comics Presents"
+    },
+    {
+        "name": "DC Nation",
+        "series": "Limited Series"
+    },
+    {
+        "name": "DC One Million",
+        "series": "DC One Million"
+    },
+    {
+        "name": "DC Special",
+        "series": "DC Special"
+    },
+    {
+        "name": "Super Hero Girls",
+        "series": "Limited Series"
+    },
+
+    {
+        "name": "DC Super Stars",
+        "series": "DC Super Stars"
+    },
+    {
+        "name": "DC Universe",
+        "series": "DC Universe"
+    },
+    {
+        "name": "Dreamwar",
+        "series": "Dreamwar"
+    },
+    {
+        "name": "Deadman",
+        "series": "Deadman"
+    },
+    {
+        "name": "New Gods",
+        "series": "New Gods"
+    },
+    {
+        "name": "Deathstroke",
+        "series": "Deathstroke"
+    },
+    {
+        "name": "Dial H",
+        "series": "Dial H"
+    },
+    {
+        "name": "Doc Savage",
+        "series": "Doc Savage"
+    },
+    {
+        "name": "Doctor Fate",
+        "series": "Doctor Fate"
+    },
+    {
+        "name": "Doom Patrol",
+        "series": "Doom Patrol"
+    },
+    {
+        "name": "Doomsday Clock",
+        "series": "Doomsday Clock"
+    },
+    {
+        "name": "Dr. Fate",
+        "series": "Dr. Fate"
+    },
+    {
+        "name": "Earth 2",
+        "series": "Earth 2"
+    },
+    {
+        "name": "Elseworlds",
+        "series": "Elseworlds"
+    },
+    {
+        "name": "Enemy Ace",
+        "series": "Enemy Ace"
+    },
+    {
+        "name": "Eternity Girl",
+        "series": "Eternity Girl"
+    },
+    {
+        "name": "Faces of Evil",
+        "series": "Faces of Evil"
+    },
+    {
+        "name": "Final Crisis",
+        "series": "Final Crisis"
+    },
+    {
+        "name": "Final Night",
+        "series": "Final Night"
+    },
+    {
+        "name": "Firestorm",
+        "series": "Firestorm"
+    },
+    {
+        "name": "First Wave",
+        "series": "First Wave"
+    },
+    {
+        "name": "Flash",
+        "series": "Flash"
+    },
+ 
+    {
+        "name": "Forever Evil",
+        "series": "Forever Evil"
+    },
+    {
+        "name": "Frankenstein",
+        "series": "Frankenstein"
+    },
+    {
+        "name": "Freedom Fighters",
+        "series": "Freedom Fighters"
+    },
+    {
+        "name": "Future Quest Presents",
+        "series": "Limited Series"
+    },
+    {
+        "name": "Futures End",
+        "series": "Futures End"
+    },
+    {
+        "name": "G.I. Zombie",
+        "series": "Limited Series"
+    },
+   
+    {
+        "name": "Gotham",
+        "series": "Batman"
+    },
+       {
+        "name": "Grayson",
+        "series": "Nightwing"
+    },
+    {
+        "name": "Green Arrow",
+        "series": "Green Arrow"
+    },
+    {
+        "name": "Green Lantern",
+        "series": "Green Lantern"
+    },
+    {
+        "name": "Grifter",
+        "series": "Grifter"
+    },
+    {
+        "name": "Harley Quinn",
+        "series": "Harley Quinn"
+    },
+    {
+        "name": "Hawk and Dove",
+        "series": "Hawk and Dove"
+    },
+    {
+        "name": "Hawkman",
+        "series": "Hawkman"
+    },
+    {
+        "name": "Helmet of Fate",
+        "series": "Helmet of Fate"
+    },
+    {
+        "name": "Heroes In Crisis",
+        "series": "Heroes In Crisis"
+    },
+    {
+        "name": "Hitman",
+        "series": "Hitman"
+    },
+    {
+        "name": "Hourman",
+        "series": "Hourman"
+    },
+    {
+        "name": "Human Bomb",
+        "series": "Human Bomb"
+    },
+    {
+        "name": "Human Target",
+        "series": "Human Target"
+    },
+    {
+        "name": "Huntress",
+        "series": "Huntress"
+    },
+    {
+        "name": "Identity Crisis",
+        "series": "Identity Crisis"
+    },
+    {
+        "name": "Impulse",
+        "series": "Impulse"
+    },
+    {
+        "name": "Infinite Crisis",
+        "series": "Infinite Crisis"
+    },
+    {
+        "name": "Injustice",
+        "series": "Injustice"
+    },
+    {
+        "name": "Invasion",
+        "series": "Invasion"
+    },
+    {
+        "name": "Jimmy Olsen",
+        "series": "Jimmy Olsen"
+    },
+    {
+        "name": "Hellblazer",
+        "series": "Hellblazer"
+    },
+    {
+        "name": "Joker",
+        "series": "Joker"
+    },
+    {
+        "name": "Jonah Hex",
+        "series": "Jonah Hex"
+    },
+    {
+        "name": "JLA",
+        "series": "Justice League"
+    },
+    {
+        "name": "Justice League",
+        "series": "Justice League"
+    },
+    {
+        "name": "JSA",
+        "series": "Justice Society"
+    },
+    {
+        "name": "Justice Society",
+        "series": "Justice Society"
+    },
+    {
+        "name": "Kamandi",
+        "series": "Kamandi"
+    },
+    {
+        "name": "Karate Kid",
+        "series": "Karate Kid"
+    },
+    {
+        "name": "Kingdom Come",
+        "series": "Kingdom Come"
+    },
+    {
+        "name": "Kirby",
+        "series": "Jack Kirby"
+    },
+    {
+        "name": "Knight and Squire",
+        "series": "Batman"
+    },
+    {
+        "name": "Legends of Tomorrow",
+        "series": "Limited Series"
+    },
+    {
+        "name": "Legion of Super-Heroes",
+        "series": "Legion of Super-Heroes"
+    },
+    {
+        "name": "Lex Luthor",
+        "series": "Lex Luthor"
+    },
+    {
+        "name": "Lobo",
+        "series": "Lobo"
+    },
+    {
+        "name": "Magog",
+        "series": "Magog"
+    },
+    {
+        "name": "Manhunter",
+        "series": "Manhunter"
+    },
+    {
+        "name": "Martian Manhunter",
+        "series": "Martian Manhunter"
+    },
+    {
+        "name": "Metal Men",
+        "series": "Metal Men"
+    },
+    {
+        "name": "Metamorpho",
+        "series": "Metamorpho"
+    },
+    {
+        "name": "Mister Miracle",
+        "series": "Mister Miracle"
+    },
+    {
+        "name": "Mister Terrific",
+        "series": "Mister Terrific"
+    },
+    {
+        "name": "More Fun Comics",
+        "series": "Golden Age"
+    },
+    {
+        "name": "My Greatest Adventure",
+        "series": "Golden Age"
+    },
+    {
+        "name": "Mysteries of Love In Space",
+        "series": "Limited Series"
+    },
+    {
+        "name": "Mystery In Space",
+        "series": "Mystery In Space"
+    },
+    {
+        "name": "Naomi",
+        "series": "Naomi"
+    },
+    {
+        "name": "National Comics",
+        "series": "Golden Age"
+    },
+    {
+        "name": "Nemesis",
+        "series": "Nemesis"
+    },
+    {
+        "name": "New Challengers",
+        "series": "Challengers of the Unknown"
+    },
+    {
+        "name": "New Gods",
+        "series": "New Gods"
+    },
+    {
+        "name": "New SuperMan",
+        "series": "New SuperMan"
+    },
+    {
+        "name": "New Year s Evil",
+        "series": "New Year s Evil"
+    },
+    {
+        "name": "New York World s Fair Comics",
+        "series": "Golden Age"
+    },
+    {
+        "name": "Nightwing",
+        "series": "Nightwing"
+    },
+    {
+        "name": "O.M.A.C",
+        "series": "O.M.A.C"
+    },
+    {
+        "name": "Oracle",
+        "series": "Oracle"
+    },
+    {
+        "name": "Our Army at War",
+        "series": "Limited Series"
+    },
+    {
+        "name": "Outsiders",
+        "series": "Outsiders"
+    },
+    {
+        "name": "Pearl",
+        "series": "Pearl"
+    },
+    {
+        "name": "Plastic Man",
+        "series": "Plastic Man"
+    },
+    {
+        "name": "Power Girl",
+        "series": "Power Girl"
+    },
+    {
+        "name": "R.E.B.E.L.S",
+        "series": "R.E.B.E.L.S"
+    },
+    {
+        "name": "Ragman",
+        "series": "Ragman"
+    },
+    {
+        "name": "Rann-Thanagar",
+        "series": "Rann-Thanagar"
+    },
+    {
+        "name": "Raven",
+        "series": "Teen Titans"
+    },
+    {
+        "name": "Red Hood",
+        "series": "Red Hood"
+    },
+    {
+        "name": "Red Lanterns",
+        "series": "Green Lantern"
+    },
+
+    {
+        "name": "Red Tornado",
+        "series": "Red Tornado"
+    },
+    {
+        "name": "Reign In Hell",
+        "series": "Limited Series"
+    },
+    {
+        "name": "Resurrection Man",
+        "series": "Resurrection Man"
+    },
+    {
+        "name": "Richard Dragon",
+        "series": "Richard Dragon"
+    },
+    {
+        "name": "Robin",
+        "series": "Robin"
+    },
+    {
+        "name": "Ronin",
+        "series": "Ronin"
+    },
+    {
+        "name": "Salvation Run",
+        "series": "Limited Series"
+    },
+    {
+        "name": "Scooby Doo",
+        "series": "Scooby Doo"
+    },
+    {
+        "name": "Secret Origins",
+        "series": "Secret Origins"
+    },
+    {
+        "name": "Secret Six",
+        "series": "Secret Six"
+    },
+    {
+        "name": "Secret Society of Super-Villains",
+        "series": "Secret Society of Super-Villains"
+    },
+    {
+        "name": "Sensation Comics",
+        "series": "Golden Age"
+    },
+    {
+        "name": "Seven Soldiers",
+        "series": "Seven Soldiers"
+    },
+    {
+        "name": "Shade",
+        "series": "Shade"
+    },
+    {
+        "name": "Shadowpact",
+        "series": "Shadowpact"
+    },
+    {
+        "name": "Shazam",
+        "series": "Shazam"
+    },
+    {
+        "name": "Showcase",
+        "series": "Showcase"
+    },
+    {
+        "name": "Sinestro",
+        "series": "Sinestro"
+    },
+    {
+        "name": "Snagglepuss",
+        "series": "Limited Series"
+    },
+    {
+        "name": "Solo",
+        "series": "Solo"
+    },
+    {
+        "name": "Solomon Grundy",
+        "series": "Solomon Grundy"
+    },
+    {
+        "name": "Spectre",
+        "series": "Spectre"
+    },
+    {
+        "name": "Starfire",
+        "series": "Teen Titans"
+    },
+    {
+        "name": "Starman",
+        "series": "Starman"
+    },
+    {
+        "name": "Steel",
+        "series": "Steel"
+    },
+    {
+        "name": "Stormwatch",
+        "series": "Stormwatch"
+    },
+    {
+        "name": "Strange Adventures",
+        "series": "Strange Adventures"
+    },
+    {
+        "name": "Suicide Squad",
+        "series": "Suicide Squad"
+    },
+    {
+        "name": "Super Sons",
+        "series": "Super Sons"
+    },
+    {
+        "name": "Superboy",
+        "series": "Superboy"
+    },
+    {
+        "name": "Supergirl",
+        "series": "Supergirl"
+    },
+    {
+        "name": "Superman",
+        "series": "Superman"
+    },
+    {
+        "name": "Teen Titans",
+        "series": "Teen Titans"
+    },
+    {
+        "name": "Tempest",
+        "series": "Teen Titans"
+    },
+    {
+        "name": "Terra",
+        "series": "Teen Titans"
+    },
+    {
+        "name": "Terror Titans",
+        "series": "Teen Titans"
+    },
+    {
+        "name": "The Best of DC",
+        "series": "Reprints"
+    },
+    {
+        "name": "The Books of Magic",
+        "series": "The Books of Magic"
+    },
+    {
+        "name": "The Brave and the Bold",
+        "series": "The Brave and the Bold"
+    },
+    {
+        "name": "The Creeper",
+        "series": "The Creeper"
+    },
+    {
+        "name": "The Demon",
+        "series": "The Demon"
+    },
+    {
+        "name": "Showcase",
+        "series": "Showcase"
+    },
+    {
+        "name": "The Final Night",
+        "series": "The Final Night"
+    },
+    {
+        "name": "The Golden Age",
+        "series": "The Golden Age"
+    },
+    {
+        "name": "The Great Ten",
+        "series": "The Great Ten"
+    },
+    {
+        "name": "The Greatest Golden Age Stories Ever Told",
+        "series": "Golden Age"
+    },
+    {
+        "name": "The Kents",
+        "series": "Superman"
+    },
+    {
+        "name": "The Mighty",
+        "series": "The Mighty"
+    },
+    {
+        "name": "The Multiversity",
+        "series": "The Multiversity"
+    },
+    {
+        "name": "The Outsiders",
+        "series": "The Outsiders"
+    },
+    {
+        "name": "The Phantom Stranger",
+        "series": "The Phantom Stranger"
+    },
+    {
+        "name": "The Phantom Zone",
+        "series": "The Phantom Zone"
+    },
+    {
+        "name": "The Prisoner",
+        "series": "The Prisoner"
+    },
+    {
+        "name": "The Question",
+        "series": "The Question"
+    },
+    {
+        "name": "The Ray",
+        "series": "The Ray"
+    },
+    {
+        "name": "The Red Circle",
+        "series": "The Red Circle"
+    },
+    {
+        "name": "The Secret Society of Super Villains",
+        "series": "The Secret Society of Super Villains"
+    },
+    {
+        "name": "The Shade",
+        "series": "The Shade"
+    },
+    {
+        "name": "The Shield",
+        "series": "The Shield"
+    },
+    {
+        "name": "The Spectre",
+        "series": "The Spectre"
+    },
+    {
+        "name": "The Spirit",
+        "series": "The Spirit"
+    },
+    {
+        "name": "The Terrifics",
+        "series": "The Terrifics"
+    },
+    {
+        "name": "The Wild Storm",
+        "series": "The Wild Storm"
+    },
+    {
+        "name": "Threshold",
+        "series": "Threshold"
+    },
+    {
+        "name": "Thrilling Comics",
+        "series": "Golden Age"
+    },
+    {
+        "name": "Time Masters",
+        "series": "Time Masters"
+    },
+    {
+        "name": "Titans",
+        "series": "Titans"
+    },
+
+    {
+        "name": "Trinity",
+        "series": "Trinity"
+    },
+    {
+        "name": "Uncle Sam",
+        "series": "Uncle Sam"
+    },
+    {
+        "name": "V for Vendetta",
+        "series": "V for Vendetta"
+    },
+    {
+        "name": "Valor",
+        "series": "Valor"
+    },
+    {
+        "name": "Vigilante",
+        "series": "Vigilante"
+    },
+    {
+        "name": "Villains United",
+        "series": "Villains United"
+    },
+    {
+        "name": "War that Time Forgot",
+        "series": "War that Time Forgot"
+    },
+    {
+        "name": "Watchmen",
+        "series": "Watchmen"
+    },
+    {
+        "name": "Wednesday Comics",
+        "series": "Wednesday Comics"
+    },
+    {
+        "name": "Weird Western Tales",
+        "series": "Weird Western Tales"
+    },
+    {
+        "name": "Wonder Twins",
+        "series": "Wonder Twins"
+    },
+    {
+        "name": "Wonder Woman",
+        "series": "Wonder Woman"
+    },
+    {
+        "name": "World s Best Comics",
+        "series": "Golden Age"
+    },
+    {
+        "name": "World War III",
+        "series": "World War III"
+    },
+    {
+        "name": "World's Finest",
+        "series": "World's Finest"
+    },
+    {
+        "name": "Young Heroes In Love",
+        "series": "Young Heroes In Love"
+    },
+    {
+        "name": "Young Justice",
+        "series": "Young Justice"
+    },
+    {
+        "name": "Zatanna",
+        "series": "Zatanna"
+    },
+    {
+        "name": "Zero Hour",
+        "series": "Zero Hour"
+    },
+
+    {
+        "name": "1985",
+        "series": "1985"
+    },
+    {
+        "name": "70th Anniversary Special",
+        "series": "Limited Series"
+    },
+    {
+        "name": "A Year Of Marvels",
+        "series": "Limited Series"
+    },
+    {
+        "name": "Adam - Legend of the Blue Marvel",
+        "series": "Adam - Legend of the Blue Marvel"
+    },
+    {
+        "name": "Age of Ultron",
+        "series": "Age of Ultron"
+    },
+    {
+        "name": "Agents of Atlas",
+        "series": "Agents of Atlas"
+    },
+    {
+        "name": "All-New Marvel",
+        "series": "Limited Series"
+    },
+    {
+        "name": "All-Winners Squad",
+        "series": "All-Winners Squad"
+    },
+    {
+        "name": "Alpha Flight",
+        "series": "Alpha Flight"
+    },
+    {
+        "name": "Amazing Adventures",
+        "series": "Amazing Adventures"
+    },
+    {
+        "name": "Annihilation",
+        "series": "Annihilation"
+    },
+    {
+        "name": "Annihilators",
+        "series": "Annihilators"
+    },
+    {
+        "name": "Ant-Man",
+        "series": "Ant-Man"
+    },
+ 
+    {
+        "name": "Avengers",
+        "series": "Avengers"
+    },
+    {
+        "name": "Axis",
+        "series": "Axis"
+    },
+
+    {
+        "name": "Battle Scars",
+        "series": "Battle Scars"
+    },
+    {
+        "name": "Beta Ray Bill",
+        "series": "Beta Ray Bill"
+    },
+    {
+        "name": "Beyond",
+        "series": "Beyond"
+    },
+    {
+        "name": "Big Hero 6",
+        "series": "Limited Series"
+    },
+    {
+        "name": "Black Bolt",
+        "series": "Black Bolt"
+    },
+    {
+        "name": "Black Panther",
+        "series": "Black Panther"
+    },
+    {
+        "name": "Black Widow",
+        "series": "Black Widow"
+    },
+    {
+        "name": "Blade",
+        "series": "Blade"
+    },
+    {
+        "name": "Blaze",
+        "series": "Blaze"
+    },
+    {
+        "name": "Blockbusters of the Marvel Universe",
+        "series": "Limited Series"
+    },
+    {
+        "name": "Bullseye",
+        "series": "Bullseye"
+    },
+    {
+        "name": "Cable",
+        "series": "Cable"
+    },
+    {
+        "name": "Captain America",
+        "series": "Captain America"
+    },
+    {
+        "name": "Captain Britain",
+        "series": "Captain Britain"
+    },
+    {
+        "name": "Captain Marvel",
+        "series": "Captain Marvel"
+    },
+    {
+        "name": "Champions",
+        "series": "Champions"
+    },
+    {
+        "name": "Chaos War",
+        "series": "Chaos War"
+    },
+    {
+        "name": "Civil War II",
+        "series": "Civil War II"
+    },
+    {
+        "name": "Civil War",
+        "series": "Civil War"
+    },
+ 
+    {
+        "name": "Conspiracy",
+        "series": "Conspiracy"
+    },
+    {
+        "name": "Daredevil",
+        "series": "Daredevil"
+    },
+    {
+        "name": "Dark Reign",
+        "series": "Dark Reign"
+    },
+    {
+        "name": "Darth Vader",
+        "series": "Darth Vader"
+    },
+    {
+        "name": "Daughters of the Dragon",
+        "series": "Daughters of the Dragon"
+    },
+    {
+        "name": "Dazzler",
+        "series": "Dazzler"
+    },
+    {
+        "name": "Deadly Hands of Kung-Fu",
+        "series": "Deadly Hands of Kung-Fu"
+    },
+    {
+        "name": "Deadpool",
+        "series": "Deadpool"
+    },
+    {
+        "name": "Defenders",
+        "series": "Defenders"
+    },
+    {
+        "name": "Doctor Strange",
+        "series": "Doctor Strange"
+    },
+    {
+        "name": "Doctor Voodoo",
+        "series": "Doctor Voodoo"
+    },
+    {
+        "name": "Dr. Doom",
+        "series": "Dr. Doom"
+    },
+    {
+        "name": "Drax",
+        "series": "Drax"
+    },
+    {
+        "name": "Earth X",
+        "series": "Earth X"
+    },
+    {
+        "name": "Elektra",
+        "series": "Elektra"
+    },
+
+    {
+        "name": "Empyre",
+        "series": "Empyre"
+    },
+
+    {
+        "name": "Eternals",
+        "series": "Eternals"
+    },
+    {
+        "name": "Excalibur",
+        "series": "Excalibur"
+    },
+    {
+        "name": "Fantastic Four",
+        "series": "Fantastic Four"
+    },
+    {
+        "name": "Fear Itself",
+        "series": "Fear Itself"
+    },
+    {
+        "name": "Fearless Defenders",
+        "series": "Fearless Defenders"
+    },
+    {
+        "name": "Fin Fang Four",
+        "series": "Fin Fang Four"
+    },
+    {
+        "name": "Firestar",
+        "series": "Firestar"
+    },
+    {
+        "name": "Franklin Richards",
+        "series": "Franklin Richards"
+    },
+    {
+        "name": "Galactus",
+        "series": "Galactus"
+    },
+    {
+        "name": "Gambit",
+        "series": "Gambit"
+    },
+    {
+        "name": "Generation M",
+        "series": "Generation M"
+    },
+    {
+        "name": "Generation X",
+        "series": "Generation X"
+    },
+    {
+        "name": "Ghost Rider",
+        "series": "Ghost Rider"
+    },
+    {
+        "name": "Gravity",
+        "series": "Gravity"
+    },
+    {
+        "name": "Green Goblin",
+        "series": "Green Goblin"
+    },
+    {
+        "name": "Guardians of the Galaxy",
+        "series": "Guardians of the Galaxy"
+    },
+    {
+        "name": "Hank Johnson  Agent of Hydra",
+        "series": "Hank Johnson  Agent of Hydra"
+    },
+    {
+        "name": "Hawkeye",
+        "series": "Hawkeye"
+    },
+    {
+        "name": "Hellcat",
+        "series": "Hellcat"
+    },
+    {
+        "name": "Hercules",
+        "series": "Hercules"
+    },
+    {
+        "name": "Heroes for Hire",
+        "series": "Heroes for Hire"
+    },
+    {
+        "name": "Heroes Reborn",
+        "series": "Heroes Reborn"
+    },
+    {
+        "name": "Heroic Age",
+        "series": "Heroic Age"
+    },
+    {
+        "name": "Hit-Monkey",
+        "series": "Hit-Monkey"
+    },
+    {
+        "name": "Howard The Duck",
+        "series": "Howard The Duck"
+    },
+    {
+        "name": "Hulk",
+        "series": "Hulk"
+    },
+    {
+        "name": "Hunger",
+        "series": "Hunger"
+    },
+    {
+        "name": "Iceman",
+        "series": "Iceman"
+    },
+    {
+        "name": "Illuminati",
+        "series": "Illuminati"
+    },
+
+    {
+        "name": "Infinity Gauntlet",
+        "series": "Thanos"
+    },
+    {
+        "name": "Infinity Wars",
+        "series": "Thanos"
+    },
+    {
+        "name": "Inhumans",
+        "series": "Inhumans"
+    },
+    {
+        "name": "Invaders",
+        "series": "Invaders"
+    },
+    {
+        "name": "Iron Fist",
+        "series": "Iron Fist"
+    },
+    {
+        "name": "Iron Man",
+        "series": "Iron Man"
+    },
+    {
+        "name": "Ironheart",
+        "series": "Ironheart"
+    },
+    {
+        "name": "IvX",
+        "series": "IvX"
+    },
+    {
+        "name": "Jean Grey",
+        "series": "X-Men"
+    },
+    {
+        "name": "Jessica Jones",
+        "series": "Jessica Jones"
+    },
+    {
+        "name": "John Carter",
+        "series": "John Carter"
+    },
+    {
+        "name": "Journey Into Mystery  The Birth of Krakoa 2018 (113494)",
+        "series": "Journey Into Mystery  The Birth of Krakoa 2018 (113494)"
+    },
+    {
+        "name": "Journey Into Unknown Worlds 2019 (116823)",
+        "series": "Journey Into Unknown Worlds 2019 (116823)"
+    },
+    {
+        "name": "Karnak",
+        "series": "Inhumans"
+    },
+    {
+        "name": "Livewires",
+        "series": "Limited Series"
+    },
+    {
+        "name": "Lockjaw",
+        "series": "Inhumans"
+    },
+    {
+        "name": "Loki",
+        "series": "Loki"
+    },
+    {
+        "name": "Longshot",
+        "series": "X-Men"
+    },
+    {
+        "name": "M.O.D.O.K",
+        "series": "M.O.D.O.K"
+    },
+    {
+        "name": "Marvel Apes",
+        "series": "Marvel Apes"
+    },
+    {
+        "name": "Marvel Assistant-Sized Spectacular",
+        "series": "Marvel Assistant-Sized Spectacular"
+    },
+    {
+        "name": "Marvel Comics Super Special",
+        "series": "Marvel Comics Super Special"
+    },
+    {
+        "name": "Marvel Divas",
+        "series": "Marvel Divas"
+    },
+    {
+        "name": "Marvel Fanfare",
+        "series": "Marvel Fanfare"
+    },
+    {
+        "name": "Marvel Graphic Novel",
+        "series": "Marvel Graphic Novel"
+    },
+    {
+        "name": "Marvel Guardians of the Galaxy Vol. 2 Prelude 2017 (97759)",
+        "series": "Marvel Guardians of the Galaxy Vol. 2 Prelude 2017 (97759)"
+    },
+    {
+        "name": "Marvel Knights",
+        "series": "Marvel Knights"
+    },
+    {
+        "name": "Marvel Legacy 2017 (104625)",
+        "series": "Marvel Legacy 2017 (104625)"
+    },
+    {
+        "name": "Marvel Mangaverse",
+        "series": "Marvel Mangaverse"
+    },
+    {
+        "name": "Marvel Masterworks  The Amazing Spider-Man 2003 (23402)",
+        "series": "Marvel Masterworks  The Amazing Spider-Man 2003 (23402)"
+    },
+    {
+        "name": "Marvel Monsters",
+        "series": "Marvel Monsters"
+    },
+    {
+        "name": "Marvel Previews",
+        "series": "Marvel Previews"
+    },
+    {
+        "name": "Marvel Tales",
+        "series": "Marvel Tales"
+    },
+    {
+        "name": "Marvel Team-Up",
+        "series": "Marvel Team-Up"
+    },
+    {
+        "name": "Marvel Two-In-One 2017 (107157)",
+        "series": "Marvel Two-In-One 2017 (107157)"
+    },
+    {
+        "name": "Marvel Two-In-One Annual 2018 (111584)",
+        "series": "Marvel Two-In-One Annual 2018 (111584)"
+    },
+    {
+        "name": "Marvel Universe Avengers  Ultron Revolution 2016 (92036)",
+        "series": "Marvel Universe Avengers  Ultron Revolution 2016 (92036)"
+    },
+    {
+        "name": "Marvel Universe Guardians of the Galaxy 2015 (85120)",
+        "series": "Marvel Universe Guardians of the Galaxy 2015 (85120)"
+    },
+    {
+        "name": "Marvel Universe Ultimate Spider-Man Vs. The Sinister Six 2016 (92564)",
+        "series": "Marvel Universe Ultimate Spider-Man Vs. The Sinister Six 2016 (92564)"
+    },
+    {
+        "name": "Marvel Zombies",
+        "series": "Marvel Zombies"
+    },
+    {
+        "name": "Marvels",
+        "series": "Marvels"
+    },
+    {
+        "name": "Mary Jane",
+        "series": "Mary Jane"
+    },
+    {
+        "name": "Micronauts",
+        "series": "Micronauts"
+    },
+    {
+        "name": "Miles Morales",
+        "series": "Miles Morales"
+    },
+    {
+        "name": "Mockingbird 2016 (88764)",
+        "series": "Mockingbird 2016 (88764)"
+    },
+    {
+        "name": "MODOK s 11",
+        "series": "MODOK s 11"
+    },
+    {
+        "name": "Monsters Unleashed  2017 (98067)",
+        "series": "Monsters Unleashed  2017 (98067)"
+    },
+    {
+        "name": "Moon Girl and Devil Dinosaur",
+        "series": "Moon Girl and Devil Dinosaur"
+    },
+    {
+        "name": "Moon Knight",
+        "series": "Moon Knight"
+    },
+    {
+        "name": "Mr. and Mrs. X 2018 (112458)",
+        "series": "Mr. and Mrs. X 2018 (112458)"
+    },
+    {
+        "name": "Ms. Marvel",
+        "series": "Ms. Marvel"
+    },
+    {
+        "name": "Mystic Comics",
+        "series": "Mystic Comics"
+    },
+    {
+        "name": "New Exiles",
+        "series": "New Exiles"
+    },
+    {
+        "name": "New Mutants",
+        "series": "New Mutants"
+    },
+    {
+        "name": "New Warriors",
+        "series": "New Warriors"
+    },
+    {
+        "name": "newuniversal",
+        "series": "newuniversal"
+    },
+    {
+        "name": "Nextwave",
+        "series": "Nextwave"
+    },
+    {
+        "name": "Nick Fury",
+        "series": "Nick Fury"
+    },
+    {
+        "name": "Nightcrawler",
+        "series": "Nightcrawler"
+    },
+    {
+        "name": "Nighthawk 2016 (90716)",
+        "series": "Nighthawk 2016 (90716)"
+    },
+    {
+        "name": "Nova",
+        "series": "Nova"
+    },
+    {
+        "name": "NYX",
+        "series": "NYX"
+    },
+    {
+        "name": "Official Index to the Marvel Universe",
+        "series": "Official Index to the Marvel Universe"
+    },
+    {
+        "name": "Old Man Logan",
+        "series": "Old Man Logan"
+    },
+    {
+        "name": "Omega Flight",
+        "series": "Omega Flight"
+    },
+    {
+        "name": "Onslaught",
+        "series": "Onslaught"
+    },
+    {
+        "name": "Operation  S.I.N",
+        "series": "Operation  S.I.N"
+    },
+    {
+        "name": "Origin",
+        "series": "Origin"
+    },
+    {
+        "name": "Original Sin",
+        "series": "Original Sin"
+    },
+    {
+        "name": "Original Sin Annual",
+        "series": "Original Sin Annual"
+    },
+    {
+        "name": "Original Sins",
+        "series": "Original Sins"
+    },
+    {
+        "name": "Osborn",
+        "series": "Osborn"
+    },
+    {
+        "name": "Penance",
+        "series": "Penance"
+    },
+    {
+        "name": "Phoenix Resurrection  The Return of Jean Grey 2017 (107368)",
+        "series": "Phoenix Resurrection  The Return of Jean Grey 2017 (107368)"
+    },
+    {
+        "name": "Power Man and Iron Fist 2016 (88214)",
+        "series": "Power Man and Iron Fist 2016 (88214)"
+    },
+    {
+        "name": "Power Pack",
+        "series": "Power Pack"
+    },
+    {
+        "name": "Psylocke",
+        "series": "Psylocke"
+    },
+    {
+        "name": "Punisher",
+        "series": "Punisher"
+    },
+    {
+        "name": "Quicksilver",
+        "series": "Quicksilver"
+    },
+    {
+        "name": "Red Skull",
+        "series": "Red Skull"
+    },
+    {
+        "name": "Riftwar",
+        "series": "Riftwar"
+    },
+    {
+        "name": "Rocket Raccoon",
+        "series": "Rocket Raccoon"
+    },
+    {
+        "name": "Runaways",
+        "series": "Runaways"
+    },
+    {
+        "name": "S.H.I.E.L.D",
+        "series": "S.H.I.E.L.D"
+    },
+    {
+        "name": "S.W.O.R.D",
+        "series": "S.W.O.R.D"
+    },
+    {
+        "name": "Sabretooth",
+        "series": "Sabretooth"
+    },
+    {
+        "name": "Scarlet Witch",
+        "series": "Scarlet Witch"
+    },
+    {
+        "name": "Scorpio Rising",
+        "series": "Scorpio Rising"
+    },
+    {
+        "name": "Secret Empire 2017 (100840)",
+        "series": "Secret Empire 2017 (100840)"
+    },
+    {
+        "name": "Secret Invasion",
+        "series": "Secret Invasion"
+    },
+    {
+        "name": "Secret War",
+        "series": "Secret War"
+    },
+    {
+        "name": "Secret Warriors",
+        "series": "Secret Warriors"
+    },
+    {
+        "name": "Secret Wars",
+        "series": "Secret Wars"
+    },
+    {
+        "name": "Sentry",
+        "series": "Sentry"
+    },
+    {
+        "name": "Shadowland",
+        "series": "Shadowland"
+    },
+    {
+        "name": "She-Hulk",
+        "series": "She-Hulk"
+    },
+    {
+        "name": "Shuri 2018 (114421)",
+        "series": "Shuri 2018 (114421)"
+    },
+    {
+        "name": "Siege",
+        "series": "Siege"
+    },
+    {
+        "name": "Silent War",
+        "series": "Silent War"
+    },
+    {
+        "name": "Silk",
+        "series": "Silk"
+    },
+    {
+        "name": "Silver Sable and the Wild Pack",
+        "series": "Silver Sable and the Wild Pack"
+    },
+    {
+        "name": "Silver Surfer",
+        "series": "Silver Surfer"
+    },
+    {
+        "name": "Skrull Kill Krew",
+        "series": "Skrull Kill Krew"
+    },
+    {
+        "name": "Son of M",
+        "series": "Son of M"
+    },
+    {
+        "name": "Spider-Girl",
+        "series": "Spider-Girl"
+    },
+    {
+        "name": "Spider-Gwen",
+        "series": "Spider-Gwen"
+    },
+    {
+        "name": "Spider-Man",
+        "series": "Spider-Man"
+    },
+    {
+        "name": "Spider-Woman",
+        "series": "Spider-Woman"
+    },
+    {
+        "name": "Squadron Supreme",
+        "series": "Squadron Supreme"
+    },
+    {
+        "name": "Squirrel Girl",
+        "series": "Squirrel Girl"
+    },
+    {
+        "name": "Star Wars",
+        "series": "Star Wars"
+    },
+    {
+        "name": "Starlord",
+        "series": "Starlord"
+    },
+    {
+        "name": "Strange Tales",
+        "series": "Strange Tales"
+    },
+    {
+        "name": "Sub-Mariner",
+        "series": "Sub-Mariner"
+    },
+    {
+        "name": "Super-Villain Team-Up M.O.D.O.K. s 11 (001-005)(2007)(digital)",
+        "series": "Super-Villain Team-Up M.O.D.O.K. s 11 (001-005)(2007)(digital)"
+    },
+    {
+        "name": "Superior Spider-Man",
+        "series": "Superior Spider-Man"
+    },
+    {
+        "name": "Supreme",
+        "series": "Supreme"
+    },
+    {
+        "name": "Tales of Suspense 2017 (107169)",
+        "series": "Tales of Suspense 2017 (107169)"
+    },
+    {
+        "name": "Taskmaster",
+        "series": "Taskmaster"
+    },
+    {
+        "name": "Thanos",
+        "series": "Thanos"
+    },
+    {
+        "name": "The Accused 2016 (92945)",
+        "series": "The Accused 2016 (92945)"
+    },
+    {
+        "name": "The Eternals",
+        "series": "The Eternals"
+    },
+    {
+        "name": "The Fallen 2016 (93187)",
+        "series": "The Fallen 2016 (93187)"
+    },
+    {
+        "name": "The Golden Age of Marvel Comics",
+        "series": "The Golden Age of Marvel Comics"
+    },
+    {
+        "name": "The Infinity Watch",
+        "series": "The Infinity Watch"
+    },
+    {
+        "name": "The Iron Age",
+        "series": "The Iron Age"
+    },
+    {
+        "name": "The Marvels Project",
+        "series": "The Marvels Project"
+    },
+    {
+        "name": "The New Warriors",
+        "series": "The New Warriors"
+    },
+    {
+        "name": "The Order",
+        "series": "The Order"
+    },
+    {
+        "name": "The Pulse",
+        "series": "The Pulse"
+    },
+    {
+        "name": "The Punisher",
+        "series": "The Punisher"
+    },
+    {
+        "name": "The Torch",
+        "series": "The Torch"
+    },
+    {
+        "name": "The Twelve",
+        "series": "The Twelve"
+    },
+    {
+        "name": "The Unbelievable Gwenpool 2016 (89627)",
+        "series": "The Unbelievable Gwenpool 2016 (89627)"
+    },
+    {
+        "name": "The Unstoppable Wasp 2018 (114425)",
+        "series": "The Unstoppable Wasp 2018 (114425)"
+    },
+    {
+        "name": "The Winter Soldier",
+        "series": "The Winter Soldier"
+    },
+    {
+        "name": "The Wonderful Wizard of Oz",
+        "series": "The Wonderful Wizard of Oz"
+    },
+    {
+        "name": "Thor",
+        "series": "Thor"
+    },
+    {
+        "name": "Thunderbolts",
+        "series": "Thunderbolts"
+    },
+    {
+        "name": "trades",
+        "series": "trades"
+    },
+    {
+        "name": "Ultimate Universe",
+        "series": "Ultimate Universe"
+    },
+    {
+        "name": "Underworld",
+        "series": "Underworld"
+    },
+    {
+        "name": "Union Jack",
+        "series": "Union Jack"
+    },
+    {
+        "name": "Venom  Space Knight 2015 (86263)",
+        "series": "Venom  Space Knight 2015 (86263)"
+    },
+    {
+        "name": "Villains for Hire",
+        "series": "Villains for Hire"
+    },
+    {
+        "name": "Vision",
+        "series": "Vision"
+    },
+    {
+        "name": "War of Kings",
+        "series": "War of Kings"
+    },
+    {
+        "name": "Warlock",
+        "series": "Warlock"
+    },
+    {
+        "name": "What If",
+        "series": "What If"
+    },
+    {
+        "name": "White Tiger",
+        "series": "White Tiger"
+    },
+    {
+        "name": "Winter Soldier",
+        "series": "Winter Soldier"
+    },
+    {
+        "name": "Wolverine",
+        "series": "Wolverine"
+    },
+    {
+        "name": "X-23",
+        "series": "X-23"
+    },
+    {
+        "name": "X-Men",
+        "series": "X-Men"
+    },
+    {
+        "name": ".AppleDouble",
+        "series": ".AppleDouble"
+    },
+    {
+        "name": ".DS_Store",
+        "series": ".DS_Store"
+    },
+    {
+        "name": "._.DS_Store",
+        "series": "._.DS_Store"
+    },
+    {
+        "name": "._Quantum Mechanics (2018)  .cbr",
+        "series": "._Quantum Mechanics (2018)  .cbr"
+    },
+    {
+        "name": "._The Shadow - Leviathan (2018)  .cbz",
+        "series": "._The Shadow - Leviathan (2018)  .cbz"
+    },
+    {
+        "name": "._Unity - Deluxe Edition - Book 01 (2015)  .cbr",
+        "series": "._Unity - Deluxe Edition - Book 01 (2015)  .cbr"
+    },
+    {
+        "name": "100 Bullets",
+        "series": "100 Bullets"
+    },
+    {
+        "name": "30 Days of Night",
+        "series": "30 Days of Night"
+    },
+    {
+        "name": "47 Ronin",
+        "series": "47 Ronin"
+    },
+    {
+        "name": "A Study in Emerald (2018) .cbz",
+        "series": "A Study in Emerald (2018) .cbz"
+    },
+    {
+        "name": "ABC",
+        "series": "ABC"
+    },
+    {
+        "name": "Aberrant",
+        "series": "Aberrant"
+    },
+    {
+        "name": "Absolution",
+        "series": "Absolution"
+    },
+    {
+        "name": "Accell",
+        "series": "Accell"
+    },
+    {
+        "name": "Action Philosophers",
+        "series": "Action Philosophers"
+    },
+    {
+        "name": "Adventures in the Rifle Brigade",
+        "series": "Adventures in the Rifle Brigade"
+    },
+    {
+        "name": "Aetheric Mechanics",
+        "series": "Aetheric Mechanics"
+    },
+    {
+        "name": "Air",
+        "series": "Air"
+    },
+    {
+        "name": "Alan Moore s Writing For Comics",
+        "series": "Alan Moore s Writing For Comics"
+    },
+    {
+        "name": "Albion",
+        "series": "Albion"
+    },
+    {
+        "name": "Aliens",
+        "series": "Aliens"
+    },
+    {
+        "name": "Aloha  Hawaiian Dick 2016 (89763)",
+        "series": "Aloha  Hawaiian Dick 2016 (89763)"
+    },
+    {
+        "name": "Amaenaideyo   MS",
+        "series": "Amaenaideyo   MS"
+    },
+    {
+        "name": "Amazing - Fantastic - Incredible - A Marvelous Memoir (2015).cbz",
+        "series": "Amazing - Fantastic - Incredible - A Marvelous Memoir (2015).cbz"
+    },
+    {
+        "name": "America s Best Comics",
+        "series": "America s Best Comics"
+    },
+    {
+        "name": "American Flagg",
+        "series": "American Flagg"
+    },
+    {
+        "name": "Anna Mercury",
+        "series": "Anna Mercury"
+    },
+    {
+        "name": "Annihilator",
+        "series": "Annihilator"
+    },
+    {
+        "name": "Apocalypse Al",
+        "series": "Apocalypse Al"
+    },
+    {
+        "name": "Archangel 2016 (90507)",
+        "series": "Archangel 2016 (90507)"
+    },
+    {
+        "name": "Archer and Armstrong",
+        "series": "Archer and Armstrong"
+    },
+    {
+        "name": "Archie",
+        "series": "Archie"
+    },
+    {
+        "name": "Area 52",
+        "series": "Area 52"
+    },
+    {
+        "name": "Asterix",
+        "series": "Asterix"
+    },
+    {
+        "name": "Astro Boy",
+        "series": "Astro Boy"
+    },
+    {
+        "name": "Astro City",
+        "series": "Astro City"
+    },
+    {
+        "name": "Astronauts In Trouble",
+        "series": "Astronauts In Trouble"
+    },
+    {
+        "name": "Atomic Age",
+        "series": "Atomic Age"
+    },
+    {
+        "name": "Atomic Robo",
+        "series": "Atomic Robo"
+    },
+    {
+        "name": "Axiom 2016 (93369)",
+        "series": "Axiom 2016 (93369)"
+    },
+    {
+        "name": "Back to Brooklyn",
+        "series": "Back to Brooklyn"
+    },
+    {
+        "name": "Bad Dog",
+        "series": "Bad Dog"
+    },
+    {
+        "name": "Bad Planet",
+        "series": "Bad Planet"
+    },
+    {
+        "name": "Barry Ween",
+        "series": "Barry Ween"
+    },
+    {
+        "name": "Bart Simpson s Treehouse of Horror",
+        "series": "Bart Simpson s Treehouse of Horror"
+    },
+    {
+        "name": "Battlestar Galactica",
+        "series": "Battlestar Galactica"
+    },
+    {
+        "name": "Beyonders 2018 (113058)",
+        "series": "Beyonders 2018 (113058)"
+    },
+    {
+        "name": "Black Hammer",
+        "series": "Black Hammer"
+    },
+    {
+        "name": "Black Orchid",
+        "series": "Black Orchid"
+    },
+    {
+        "name": "Blackout",
+        "series": "Blackout"
+    },
+    {
+        "name": "Blade Bunny",
+        "series": "Blade Bunny"
+    },
+    {
+        "name": "Bloodshot",
+        "series": "Bloodshot"
+    },
+    {
+        "name": "Bloody Mary",
+        "series": "Bloody Mary"
+    },
+    {
+        "name": "Bloom County",
+        "series": "Bloom County"
+    },
+    {
+        "name": "Bone",
+        "series": "Bone"
+    },
+    {
+        "name": "Books of Magic 2018 (114703)",
+        "series": "Books of Magic 2018 (114703)"
+    },
+    {
+        "name": "Born",
+        "series": "Born"
+    },
+    {
+        "name": "Breathe",
+        "series": "Breathe"
+    },
+    {
+        "name": "Brilliant",
+        "series": "Brilliant"
+    },
+    {
+        "name": "Brit",
+        "series": "Brit"
+    },
+    {
+        "name": "Buck Rogers",
+        "series": "Buck Rogers"
+    },
+    {
+        "name": "Buddha",
+        "series": "Buddha"
+    },
+    {
+        "name": "Buffy the Vampire Slayer",
+        "series": "Buffy the Vampire Slayer"
+    },
+    {
+        "name": "C.E. Murphy s Take A Chance",
+        "series": "C.E. Murphy s Take A Chance"
+    },
+    {
+        "name": "Cage",
+        "series": "Cage"
+    },
+    {
+        "name": "Captain Atom",
+        "series": "Captain Atom"
+    },
+    {
+        "name": "Carbon Grey",
+        "series": "Carbon Grey"
+    },
+    {
+        "name": "Carthago",
+        "series": "Carthago"
+    },
+    {
+        "name": "Casanova",
+        "series": "Casanova"
+    },
+    {
+        "name": "Casey Blue",
+        "series": "Casey Blue"
+    },
+    {
+        "name": "Celestine",
+        "series": "Celestine"
+    },
+    {
+        "name": "Chew",
+        "series": "Chew"
+    },
+    {
+        "name": "Chosen",
+        "series": "Chosen"
+    },
+    {
+        "name": "Chrononauts",
+        "series": "Chrononauts"
+    },
+    {
+        "name": "Chuck",
+        "series": "Chuck"
+    },
+    {
+        "name": "Cindy the Demon Hunter",
+        "series": "Cindy the Demon Hunter"
+    },
+    {
+        "name": "City of Silence",
+        "series": "City of Silence"
+    },
+    {
+        "name": "Clean Room 2015 (85426)",
+        "series": "Clean Room 2015 (85426)"
+    },
+    {
+        "name": "Codebreakers",
+        "series": "Codebreakers"
+    },
+    {
+        "name": "Comic Book History of Comics",
+        "series": "Comic Book History of Comics"
+    },
+    {
+        "name": "Conan",
+        "series": "Conan"
+    },
+    {
+        "name": "Conspiracy 2018 (115385)",
+        "series": "Conspiracy 2018 (115385)"
+    },
+    {
+        "name": "Criminal",
+        "series": "Criminal"
+    },
+    {
+        "name": "Cryptocracy 2016 (91887)",
+        "series": "Cryptocracy 2016 (91887)"
+    },
+    {
+        "name": "Dark Horse",
+        "series": "Dark Horse"
+    },
+    {
+        "name": "Dark Horse Presents",
+        "series": "Dark Horse Presents"
+    },
+    {
+        "name": "Dark Matter",
+        "series": "Dark Matter"
+    },
+    {
+        "name": "Darwin's Diaries",
+        "series": "Darwin's Diaries"
+    },
+    {
+        "name": "Days Missing",
+        "series": "Days Missing"
+    },
+    {
+        "name": "Dead  She Said",
+        "series": "Dead  She Said"
+    },
+    {
+        "name": "Death Jr",
+        "series": "Death Jr"
+    },
+    {
+        "name": "Deathbed 2018 (108808)",
+        "series": "Deathbed 2018 (108808)"
+    },
+    {
+        "name": "Deep Gravity",
+        "series": "Deep Gravity"
+    },
+    {
+        "name": "Deep State  Darker Side of the Moon 2015 (81099)",
+        "series": "Deep State  Darker Side of the Moon 2015 (81099)"
+    },
+    {
+        "name": "Dell Giant",
+        "series": "Dell Giant"
+    },
+    {
+        "name": "Demo",
+        "series": "Demo"
+    },
+    {
+        "name": "Dept. H (v01-v02)(2017)",
+        "series": "Dept. H (v01-v02)(2017)"
+    },
+    {
+        "name": "Dept. H 2016 (89777)",
+        "series": "Dept. H 2016 (89777)"
+    },
+    {
+        "name": "Destroyer",
+        "series": "Destroyer"
+    },
+    {
+        "name": "Die",
+        "series": "Die"
+    },
+    {
+        "name": "Digital Webbing Presents",
+        "series": "Digital Webbing Presents"
+    },
+    {
+        "name": "Dilbert",
+        "series": "Dilbert"
+    },
+    {
+        "name": "Dinosaurs vs. Aliens",
+        "series": "Dinosaurs vs. Aliens"
+    },
+    {
+        "name": "Divine Right",
+        "series": "Divine Right"
+    },
+    {
+        "name": "Doc Savage",
+        "series": "Doc Savage"
+    },
+    {
+        "name": "Doctor Solar",
+        "series": "Doctor Solar"
+    },
+    {
+        "name": "Doctor Spectrum",
+        "series": "Doctor Spectrum"
+    },
+    {
+        "name": "Doctor Spektor  Master of the Occult",
+        "series": "Doctor Spektor  Master of the Occult"
+    },
+    {
+        "name": "Doctor Star and the Kingdom of Lost Tomorrows 2018 (108940)",
+        "series": "Doctor Star and the Kingdom of Lost Tomorrows 2018 (108940)"
+    },
+    {
+        "name": "Down",
+        "series": "Down"
+    },
+    {
+        "name": "Dreadstar",
+        "series": "Dreadstar"
+    },
+    {
+        "name": "Dresden Files",
+        "series": "Dresden Files"
+    },
+    {
+        "name": "Dungeons   Dragons  A Darkened Wish 2019 (117697)",
+        "series": "Dungeons   Dragons  A Darkened Wish 2019 (117697)"
+    },
+    {
+        "name": "DV8",
+        "series": "DV8"
+    },
+    {
+        "name": "East of West",
+        "series": "East of West"
+    },
+    {
+        "name": "Echo",
+        "series": "Echo"
+    },
+    {
+        "name": "Edison Rex",
+        "series": "Edison Rex"
+    },
+    {
+        "name": "Eerie",
+        "series": "Eerie"
+    },
+    {
+        "name": "Elektra",
+        "series": "Elektra"
+    },
+    {
+        "name": "Empress 2016 (89357)",
+        "series": "Empress 2016 (89357)"
+    },
+    {
+        "name": "Eternal",
+        "series": "Eternal"
+    },
+    {
+        "name": "Eureka",
+        "series": "Eureka"
+    },
+    {
+        "name": "Evil Dead",
+        "series": "Evil Dead"
+    },
+    {
+        "name": "Ex Machina",
+        "series": "Ex Machina"
+    },
+    {
+        "name": "Excalibur",
+        "series": "Excalibur"
+    },
+    {
+        "name": "Fables",
+        "series": "Fables"
+    },
+    {
+        "name": "Facts in the Case of the Departure of Miss Finch",
+        "series": "Facts in the Case of the Departure of Miss Finch"
+    },
+    {
+        "name": "Fairest",
+        "series": "Fairest"
+    },
+    {
+        "name": "Farscape",
+        "series": "Farscape"
+    },
+    {
+        "name": "Faster Than Light",
+        "series": "Faster Than Light"
+    },
+    {
+        "name": "Fatale",
+        "series": "Fatale"
+    },
+    {
+        "name": "Fathom",
+        "series": "Fathom"
+    },
+    {
+        "name": "Fear Agent",
+        "series": "Fear Agent"
+    },
+    {
+        "name": "Federal Bureau of Physics",
+        "series": "Federal Bureau of Physics"
+    },
+    {
+        "name": "Feynman",
+        "series": "Feynman"
+    },
+    {
+        "name": "First Law of Mad Science",
+        "series": "First Law of Mad Science"
+    },
+    {
+        "name": "Five Weapons",
+        "series": "Five Weapons"
+    },
+    {
+        "name": "Flash Gordon",
+        "series": "Flash Gordon"
+    },
+    {
+        "name": "Flex Mentallo  Man of Muscle Mystery - The Deluxe Edition 2012 (30094)",
+        "series": "Flex Mentallo  Man of Muscle Mystery - The Deluxe Edition 2012 (30094)"
+    },
+    {
+        "name": "FreakAngels",
+        "series": "FreakAngels"
+    },
+    {
+        "name": "Fringe",
+        "series": "Fringe"
+    },
+    {
+        "name": "From Hell",
+        "series": "From Hell"
+    },
+    {
+        "name": "Fury",
+        "series": "Fury"
+    },
+    {
+        "name": "Fusion",
+        "series": "Fusion"
+    },
+    {
+        "name": "G dland",
+        "series": "G dland"
+    },
+    {
+        "name": "Garth Ennis  303",
+        "series": "Garth Ennis  303"
+    },
+    {
+        "name": "Gen 13",
+        "series": "Gen 13"
+    },
+    {
+        "name": "Genie",
+        "series": "Genie"
+    },
+    {
+        "name": "Get Jiro",
+        "series": "Get Jiro"
+    },
+    {
+        "name": "Giant Days",
+        "series": "Giant Days"
+    },
+    {
+        "name": "Gladstone s School for World Conquerors",
+        "series": "Gladstone s School for World Conquerors"
+    },
+    {
+        "name": "Global Frequency",
+        "series": "Global Frequency"
+    },
+    {
+        "name": "Goddess",
+        "series": "Goddess"
+    },
+    {
+        "name": "Godzilla",
+        "series": "Godzilla"
+    },
+    {
+        "name": "Gravel",
+        "series": "Gravel"
+    },
+    {
+        "name": "Green Hornet",
+        "series": "Green Hornet"
+    },
+    {
+        "name": "Grendel",
+        "series": "Grendel"
+    },
+    {
+        "name": "Grifter",
+        "series": "Grifter"
+    },
+    {
+        "name": "Grimjack",
+        "series": "Grimjack"
+    },
+    {
+        "name": "Groom Lake",
+        "series": "Groom Lake"
+    },
+    {
+        "name": "Grounded",
+        "series": "Grounded"
+    },
+    {
+        "name": "Guarding the Globe",
+        "series": "Guarding the Globe"
+    },
+    {
+        "name": "Guerillas",
+        "series": "Guerillas"
+    },
+    {
+        "name": "Guilty Pleasures",
+        "series": "Guilty Pleasures"
+    },
+    {
+        "name": "Happy  2012 (52401)",
+        "series": "Happy  2012 (52401)"
+    },
+    {
+        "name": "Harbinger",
+        "series": "Harbinger"
+    },
+    {
+        "name": "Hard Boiled",
+        "series": "Hard Boiled"
+    },
+    {
+        "name": "Hatter M  The Looking Glass Wars",
+        "series": "Hatter M  The Looking Glass Wars"
+    },
+    {
+        "name": "Hawaiian Dick",
+        "series": "Hawaiian Dick"
+    },
+    {
+        "name": "Heartland",
+        "series": "Heartland"
+    },
+    {
+        "name": "Hedy Lamarr - An Incredible Life (2018).cbz",
+        "series": "Hedy Lamarr - An Incredible Life (2018).cbz"
+    },
+    {
+        "name": "Hellblazer",
+        "series": "Hellblazer"
+    },
+    {
+        "name": "Hellboy",
+        "series": "Hellboy"
+    },
+    {
+        "name": "Hercules",
+        "series": "Hercules"
+    },
+    {
+        "name": "Hero Squared",
+        "series": "Hero Squared"
+    },
+    {
+        "name": "Heroes",
+        "series": "Heroes"
+    },
+    {
+        "name": "Hotwire",
+        "series": "Hotwire"
+    },
+    {
+        "name": "Hoverboy  The Republican Super-Hero",
+        "series": "Hoverboy  The Republican Super-Hero"
+    },
+    {
+        "name": "Husk",
+        "series": "Husk"
+    },
+    {
+        "name": "I Hate Fairyland 2015 (85292)",
+        "series": "I Hate Fairyland 2015 (85292)"
+    },
+    {
+        "name": "Ignition City",
+        "series": "Ignition City"
+    },
+    {
+        "name": "Incognito",
+        "series": "Incognito"
+    },
+    {
+        "name": "Incorruptible",
+        "series": "Incorruptible"
+    },
+    {
+        "name": "Indestructible",
+        "series": "Indestructible"
+    },
+    {
+        "name": "Infinite Loop",
+        "series": "Infinite Loop"
+    },
+    {
+        "name": "Injection",
+        "series": "Injection"
+    },
+    {
+        "name": "Intergalactic",
+        "series": "Intergalactic"
+    },
+    {
+        "name": "Invincible",
+        "series": "Invincible"
+    },
+    {
+        "name": "Invincible 01 - Justice and Fresh Vegetables (2018) (Europe Comics) (Digital-Empire).cbz",
+        "series": "Invincible 01 - Justice and Fresh Vegetables (2018) (Europe Comics) (Digital-Empire).cbz"
+    },
+    {
+        "name": "Invisible Kingdom 2019 (117748)",
+        "series": "Invisible Kingdom 2019 (117748)"
+    },
+    {
+        "name": "Iron West",
+        "series": "Iron West"
+    },
+    {
+        "name": "Irredeemable",
+        "series": "Irredeemable"
+    },
+    {
+        "name": "Ivar  Timewalker",
+        "series": "Ivar  Timewalker"
+    },
+    {
+        "name": "iZombie",
+        "series": "iZombie"
+    },
+    {
+        "name": "James Bond  Origin 2018 (113242)",
+        "series": "James Bond  Origin 2018 (113242)"
+    },
+    {
+        "name": "Jenna",
+        "series": "Jenna"
+    },
+    {
+        "name": "Jinn",
+        "series": "Jinn"
+    },
+    {
+        "name": "John Byrne s Next Men",
+        "series": "John Byrne s Next Men"
+    },
+    {
+        "name": "Johnny Hiro",
+        "series": "Johnny Hiro"
+    },
+    {
+        "name": "Johnny Monster",
+        "series": "Johnny Monster"
+    },
+    {
+        "name": "Josie and the Pussycats 2016 (94434)",
+        "series": "Josie and the Pussycats 2016 (94434)"
+    },
+    {
+        "name": "Judge Dredd",
+        "series": "Judge Dredd"
+    },
+    {
+        "name": "Jupiter s Legacy",
+        "series": "Jupiter s Legacy"
+    },
+    {
+        "name": "Just a Pilgrim",
+        "series": "Just a Pilgrim"
+    },
+    {
+        "name": "Kabuki",
+        "series": "Kabuki"
+    },
+    {
+        "name": "Kev",
+        "series": "Kev"
+    },
+    {
+        "name": "Kevin",
+        "series": "Kevin"
+    },
+    {
+        "name": "Kick-Ass",
+        "series": "Kick-Ass"
+    },
+    {
+        "name": "Konnichiwa, Kaiju-Kun 01 (of 06) (2019)  (The Seeker-Empire).cbz",
+        "series": "Konnichiwa, Kaiju-Kun 01 (of 06) (2019)  (The Seeker-Empire).cbz"
+    },
+    {
+        "name": "Lady S",
+        "series": "Lady S"
+    },
+    {
+        "name": "Largo Winch",
+        "series": "Largo Winch"
+    },
+    {
+        "name": "Lazarus",
+        "series": "Lazarus"
+    },
+    {
+        "name": "Leave It To Chance",
+        "series": "Leave It To Chance"
+    },
+    {
+        "name": "Letter 44",
+        "series": "Letter 44"
+    },
+    {
+        "name": "Liberty Meadows",
+        "series": "Liberty Meadows"
+    },
+    {
+        "name": "Lucas Stand",
+        "series": "Lucas Stand"
+    },
+    {
+        "name": "Lucifer 2015 (86704)",
+        "series": "Lucifer 2015 (86704)"
+    },
+    {
+        "name": "Lucky Luke",
+        "series": "Lucky Luke"
+    },
+    {
+        "name": "Luther Strode",
+        "series": "Luther Strode"
+    },
+    {
+        "name": "Madame Mirage",
+        "series": "Madame Mirage"
+    },
+    {
+        "name": "Mage",
+        "series": "Mage"
+    },
+    {
+        "name": "Maintenance",
+        "series": "Maintenance"
+    },
+    {
+        "name": "Martha Washington",
+        "series": "Martha Washington"
+    },
+    {
+        "name": "Marvel Boy",
+        "series": "Marvel Boy"
+    },
+    {
+        "name": "Marvel Knights",
+        "series": "Marvel Knights"
+    },
+    {
+        "name": "Masked 2015 (80918)",
+        "series": "Masked 2015 (80918)"
+    },
+    {
+        "name": "Mek",
+        "series": "Mek"
+    },
+    {
+        "name": "Midnight Nation",
+        "series": "Midnight Nation"
+    },
+    {
+        "name": "Midnighter",
+        "series": "Midnighter"
+    },
+    {
+        "name": "Ministry of Space",
+        "series": "Ministry of Space"
+    },
+    {
+        "name": "Miracleman",
+        "series": "Miracleman"
+    },
+    {
+        "name": "Mister Universe",
+        "series": "Mister Universe"
+    },
+    {
+        "name": "Mom s Cancer",
+        "series": "Mom s Cancer"
+    },
+    {
+        "name": "Monstress 2015 (85776)",
+        "series": "Monstress 2015 (85776)"
+    },
+    {
+        "name": "Mr. Majestic",
+        "series": "Mr. Majestic"
+    },
+    {
+        "name": "Murder Me Dead",
+        "series": "Murder Me Dead"
+    },
+    {
+        "name": "My New York Marathon (2018).cbz",
+        "series": "My New York Marathon (2018).cbz"
+    },
+    {
+        "name": "Mysteries in Space",
+        "series": "Mysteries in Space"
+    },
+    {
+        "name": "Nemesis",
+        "series": "Nemesis"
+    },
+    {
+        "name": "Nemesis the Warlock poster prog",
+        "series": "Nemesis the Warlock poster prog"
+    },
+    {
+        "name": "Nemo",
+        "series": "Nemo"
+    },
+    {
+        "name": "New Alice In Wonderland",
+        "series": "New Alice In Wonderland"
+    },
+    {
+        "name": "New folder",
+        "series": "New folder"
+    },
+    {
+        "name": "New World Order",
+        "series": "New World Order"
+    },
+    {
+        "name": "Nick Fury",
+        "series": "Nick Fury"
+    },
+    {
+        "name": "No Hero",
+        "series": "No Hero"
+    },
+    {
+        "name": "North 40",
+        "series": "North 40"
+    },
+    {
+        "name": "Ocean",
+        "series": "Ocean"
+    },
+    {
+        "name": "Olympus Mons",
+        "series": "Olympus Mons"
+    },
+    {
+        "name": "Oni Double Feature",
+        "series": "Oni Double Feature"
+    },
+    {
+        "name": "Orbital",
+        "series": "Orbital"
+    },
+    {
+        "name": "Orbiter",
+        "series": "Orbiter"
+    },
+    {
+        "name": "Otherworld",
+        "series": "Otherworld"
+    },
+    {
+        "name": "Overlook",
+        "series": "Overlook"
+    },
+    {
+        "name": "Pacific Rim  Tales From Year Zero",
+        "series": "Pacific Rim  Tales From Year Zero"
+    },
+    {
+        "name": "Painkiller Jane",
+        "series": "Painkiller Jane"
+    },
+    {
+        "name": "Pantheon",
+        "series": "Pantheon"
+    },
+    {
+        "name": "Paolo Parente s Dust",
+        "series": "Paolo Parente s Dust"
+    },
+    {
+        "name": "Paper Girls",
+        "series": "Paper Girls"
+    },
+    {
+        "name": "Paradox",
+        "series": "Paradox"
+    },
+    {
+        "name": "Parallel Man  Invasion America 2014 (77037)",
+        "series": "Parallel Man  Invasion America 2014 (77037)"
+    },
+    {
+        "name": "Pax Romana",
+        "series": "Pax Romana"
+    },
+    {
+        "name": "Penny   Aggie",
+        "series": "Penny   Aggie"
+    },
+    {
+        "name": "Penny Palabras",
+        "series": "Penny Palabras"
+    },
+    {
+        "name": "Pilot Season  Theory of Everything",
+        "series": "Pilot Season  Theory of Everything"
+    },
+    {
+        "name": "Planetary",
+        "series": "Planetary"
+    },
+    {
+        "name": "Planetary Brigade",
+        "series": "Planetary Brigade"
+    },
+    {
+        "name": "Plants vs. Zombies",
+        "series": "Plants vs. Zombies"
+    },
+    {
+        "name": "Point Blank",
+        "series": "Point Blank"
+    },
+    {
+        "name": "Point of Impact",
+        "series": "Point of Impact"
+    },
+    {
+        "name": "Polar",
+        "series": "Polar"
+    },
+    {
+        "name": "Police Comics",
+        "series": "Police Comics"
+    },
+    {
+        "name": "Powers",
+        "series": "Powers"
+    },
+    {
+        "name": "Preacher",
+        "series": "Preacher"
+    },
+    {
+        "name": "Predators",
+        "series": "Predators"
+    },
+    {
+        "name": "Pretty Baby Machine",
+        "series": "Pretty Baby Machine"
+    },
+    {
+        "name": "Pride   Joy",
+        "series": "Pride   Joy"
+    },
+    {
+        "name": "Prodigy 2018 (115757)",
+        "series": "Prodigy 2018 (115757)"
+    },
+    {
+        "name": "Project Superpowers",
+        "series": "Project Superpowers"
+    },
+    {
+        "name": "Proof",
+        "series": "Proof"
+    },
+    {
+        "name": "PS238",
+        "series": "PS238"
+    },
+    {
+        "name": "Push",
+        "series": "Push"
+    },
+    {
+        "name": "PvP",
+        "series": "PvP"
+    },
+    {
+        "name": "Quantum and Woody",
+        "series": "Quantum and Woody"
+    },
+    {
+        "name": "Quantum Mechanics (2018) .cbz",
+        "series": "Quantum Mechanics (2018) .cbz"
+    },
+    {
+        "name": "Queen   Country",
+        "series": "Queen   Country"
+    },
+    {
+        "name": "Rai  The History of the Valiant Universe 2017 (102130)",
+        "series": "Rai  The History of the Valiant Universe 2017 (102130)"
+    },
+    {
+        "name": "Rasl",
+        "series": "Rasl"
+    },
+    {
+        "name": "Rat Catcher",
+        "series": "Rat Catcher"
+    },
+    {
+        "name": "Rawhide Kid",
+        "series": "Rawhide Kid"
+    },
+    {
+        "name": "Real Science Adventures 2017 (100957)",
+        "series": "Real Science Adventures 2017 (100957)"
+    },
+    {
+        "name": "Red",
+        "series": "Red"
+    },
+    {
+        "name": "Red Star",
+        "series": "Red Star"
+    },
+    {
+        "name": "Reload",
+        "series": "Reload"
+    },
+    {
+        "name": "Resident Alien",
+        "series": "Resident Alien"
+    },
+    {
+        "name": "Rest",
+        "series": "Rest"
+    },
+    {
+        "name": "Revelations",
+        "series": "Revelations"
+    },
+    {
+        "name": "Revival",
+        "series": "Revival"
+    },
+    {
+        "name": "Rex Mundi",
+        "series": "Rex Mundi"
+    },
+    {
+        "name": "Rocket Girl",
+        "series": "Rocket Girl"
+    },
+    {
+        "name": "Saga",
+        "series": "Saga"
+    },
+    {
+        "name": "Sam   Max",
+        "series": "Sam   Max"
+    },
+    {
+        "name": "Sam Noir",
+        "series": "Sam Noir"
+    },
+    {
+        "name": "Samurai",
+        "series": "Samurai"
+    },
+    {
+        "name": "Sandman",
+        "series": "Sandman"
+    },
+    {
+        "name": "Satellite Sam",
+        "series": "Satellite Sam"
+    },
+    {
+        "name": "Saucer Country",
+        "series": "Saucer Country"
+    },
+    {
+        "name": "Savant Garde",
+        "series": "Savant Garde"
+    },
+    {
+        "name": "Scarlet",
+        "series": "Scarlet"
+    },
+    {
+        "name": "Scott Pilgrim",
+        "series": "Scott Pilgrim"
+    },
+    {
+        "name": "Scrooge McDuck",
+        "series": "Scrooge McDuck"
+    },
+    {
+        "name": "Self",
+        "series": "Self"
+    },
+    {
+        "name": "Sentry",
+        "series": "Sentry"
+    },
+    {
+        "name": "Serenity",
+        "series": "Serenity"
+    },
+    {
+        "name": "Sex Criminals 2013 (67679)",
+        "series": "Sex Criminals 2013 (67679)"
+    },
+    {
+        "name": "Shadow",
+        "series": "Shadow"
+    },
+    {
+        "name": "Sherlock Holmes",
+        "series": "Sherlock Holmes"
+    },
+    {
+        "name": "Shrugged",
+        "series": "Shrugged"
+    },
+    {
+        "name": "Silent Dragon",
+        "series": "Silent Dragon"
+    },
+    {
+        "name": "Silver Surfer",
+        "series": "Silver Surfer"
+    },
+    {
+        "name": "Sin of Omniscience",
+        "series": "Sin of Omniscience"
+    },
+    {
+        "name": "Sixgun Samurai",
+        "series": "Sixgun Samurai"
+    },
+    {
+        "name": "Slaughter-House Five - Kurt Vonnegut.pdf",
+        "series": "Slaughter-House Five - Kurt Vonnegut.pdf"
+    },
+    {
+        "name": "Sleeper",
+        "series": "Sleeper"
+    },
+    {
+        "name": "Smoke",
+        "series": "Smoke"
+    },
+    {
+        "name": "Solar",
+        "series": "Solar"
+    },
+    {
+        "name": "Space Usagi",
+        "series": "Space Usagi"
+    },
+    {
+        "name": "Spartan",
+        "series": "Spartan"
+    },
+    {
+        "name": "Spider-Man",
+        "series": "Spider-Man"
+    },
+    {
+        "name": "Spin Angels",
+        "series": "Spin Angels"
+    },
+    {
+        "name": "Star Trek",
+        "series": "Star Trek"
+    },
+    {
+        "name": "Star Wars",
+        "series": "Star Wars"
+    },
+    {
+        "name": "StarCraft  Soldiers 2019 (116676)",
+        "series": "StarCraft  Soldiers 2019 (116676)"
+    },
+    {
+        "name": "Stardust",
+        "series": "Stardust"
+    },
+    {
+        "name": "Stargate",
+        "series": "Stargate"
+    },
+    {
+        "name": "Starlight",
+        "series": "Starlight"
+    },
+    {
+        "name": "Starship Troopers",
+        "series": "Starship Troopers"
+    },
+    {
+        "name": "Station",
+        "series": "Station"
+    },
+    {
+        "name": "Storming Paradise",
+        "series": "Storming Paradise"
+    },
+    {
+        "name": "Stormwatch",
+        "series": "Stormwatch"
+    },
+    {
+        "name": "Strange Adventures",
+        "series": "Strange Adventures"
+    },
+    {
+        "name": "Strange Tales",
+        "series": "Strange Tales"
+    },
+    {
+        "name": "Strangetown",
+        "series": "Strangetown"
+    },
+    {
+        "name": "Street Fighter",
+        "series": "Street Fighter"
+    },
+    {
+        "name": "Stumptown",
+        "series": "Stumptown"
+    },
+    {
+        "name": "Sub-Mariner",
+        "series": "Sub-Mariner"
+    },
+    {
+        "name": "Sugar & Spike - Metahuman Investigations (2016) .cbz",
+        "series": "Sugar & Spike - Metahuman Investigations (2016) .cbz"
+    },
+    {
+        "name": "Suicide Risk",
+        "series": "Suicide Risk"
+    },
+    {
+        "name": "Super Human Resources",
+        "series": "Super Human Resources"
+    },
+    {
+        "name": "Supercrooks",
+        "series": "Supercrooks"
+    },
+    {
+        "name": "Superior",
+        "series": "Superior"
+    },
+    {
+        "name": "Supermarket",
+        "series": "Supermarket"
+    },
+    {
+        "name": "Supreme",
+        "series": "Supreme"
+    },
+    {
+        "name": "Supreme Blue Rose",
+        "series": "Supreme Blue Rose"
+    },
+    {
+        "name": "Supreme Power",
+        "series": "Supreme Power"
+    },
+    {
+        "name": "Supurbia",
+        "series": "Supurbia"
+    },
+    {
+        "name": "Switchblade Honey",
+        "series": "Switchblade Honey"
+    },
+    {
+        "name": "Sword of Damocles",
+        "series": "Sword of Damocles"
+    },
+    {
+        "name": "Tangent Comics",
+        "series": "Tangent Comics"
+    },
+    {
+        "name": "Teenage Mutant Ninja Turtles",
+        "series": "Teenage Mutant Ninja Turtles"
+    },
+    {
+        "name": "Terminator",
+        "series": "Terminator"
+    },
+    {
+        "name": "The Accelerators",
+        "series": "The Accelerators"
+    },
+    {
+        "name": "The Activity",
+        "series": "The Activity"
+    },
+    {
+        "name": "The Adventures of a Comic Con Girl",
+        "series": "The Adventures of a Comic Con Girl"
+    },
+    {
+        "name": "The Adventures of Tintin Comic Book",
+        "series": "The Adventures of Tintin Comic Book"
+    },
+    {
+        "name": "The Atomic Legion (2014) GetComics.INFO.cbz",
+        "series": "The Atomic Legion (2014) GetComics.INFO.cbz"
+    },
+    {
+        "name": "The Authority",
+        "series": "The Authority"
+    },
+    {
+        "name": "The Authority  Kev",
+        "series": "The Authority  Kev"
+    },
+    {
+        "name": "The Black Hood 2015 (80318)",
+        "series": "The Black Hood 2015 (80318)"
+    },
+    {
+        "name": "The Books of Magic",
+        "series": "The Books of Magic"
+    },
+    {
+        "name": "The Boys",
+        "series": "The Boys"
+    },
+    {
+        "name": "The Chimpanzee Complex",
+        "series": "The Chimpanzee Complex"
+    },
+    {
+        "name": "The Clockwork Girl",
+        "series": "The Clockwork Girl"
+    },
+    {
+        "name": "The Colour of Magic",
+        "series": "The Colour of Magic"
+    },
+    {
+        "name": "The Comics Journal",
+        "series": "The Comics Journal"
+    },
+    {
+        "name": "The Darkness",
+        "series": "The Darkness"
+    },
+    {
+        "name": "The Dreaming 2018 (113236)",
+        "series": "The Dreaming 2018 (113236)"
+    },
+    {
+        "name": "The Dreaming(1996-2001)",
+        "series": "The Dreaming(1996-2001)"
+    },
+    {
+        "name": "The Establishment",
+        "series": "The Establishment"
+    },
+    {
+        "name": "The Five Fists of Science",
+        "series": "The Five Fists of Science"
+    },
+    {
+        "name": "The Good  The Bad  and The Ugly",
+        "series": "The Good  The Bad  and The Ugly"
+    },
+    {
+        "name": "The Goon",
+        "series": "The Goon"
+    },
+    {
+        "name": "The Great Wall - Last Survivor (2017) (digital) (Son of Ultron-Empire).cbz",
+        "series": "The Great Wall - Last Survivor (2017) (digital) (Son of Ultron-Empire).cbz"
+    },
+    {
+        "name": "The Hood",
+        "series": "The Hood"
+    },
+    {
+        "name": "The Imitation Game - Alan Turing Decoded (2016).cbz",
+        "series": "The Imitation Game - Alan Turing Decoded (2016).cbz"
+    },
+    {
+        "name": "The Incredibles",
+        "series": "The Incredibles"
+    },
+    {
+        "name": "The Infinite Vacation",
+        "series": "The Infinite Vacation"
+    },
+    {
+        "name": "The Killer",
+        "series": "The Killer"
+    },
+    {
+        "name": "The Land That Time Forgot 2016 (92375)",
+        "series": "The Land That Time Forgot 2016 (92375)"
+    },
+    {
+        "name": "The Last Space Race",
+        "series": "The Last Space Race"
+    },
+    {
+        "name": "The League of Extraordinary Gentlemen",
+        "series": "The League of Extraordinary Gentlemen"
+    },
+    {
+        "name": "The Life and Death of Toyo Harada 2019 (117591)",
+        "series": "The Life and Death of Toyo Harada 2019 (117591)"
+    },
+    {
+        "name": "The Life Eaters",
+        "series": "The Life Eaters"
+    },
+    {
+        "name": "The Losers",
+        "series": "The Losers"
+    },
+    {
+        "name": "The Lost Boys 2016 (94808)",
+        "series": "The Lost Boys 2016 (94808)"
+    },
+    {
+        "name": "The Lost Continent",
+        "series": "The Lost Continent"
+    },
+    {
+        "name": "The Magic Order 2018 (111537)",
+        "series": "The Magic Order 2018 (111537)"
+    },
+    {
+        "name": "The Man With No Name",
+        "series": "The Man With No Name"
+    },
+    {
+        "name": "The Manga Guide to Statistics",
+        "series": "The Manga Guide to Statistics"
+    },
+    {
+        "name": "The Manhattan Projects",
+        "series": "The Manhattan Projects"
+    },
+    {
+        "name": "The Mercenary Sea",
+        "series": "The Mercenary Sea"
+    },
+    {
+        "name": "The Metabaron",
+        "series": "The Metabaron"
+    },
+    {
+        "name": "The Middleman",
+        "series": "The Middleman"
+    },
+    {
+        "name": "The Monarchy",
+        "series": "The Monarchy"
+    },
+    {
+        "name": "The October Faction",
+        "series": "The October Faction"
+    },
+    {
+        "name": "The October Girl",
+        "series": "The October Girl"
+    },
+    {
+        "name": "The Photo Journal Guide to Comic Books (v01-v04)(1990-1991)",
+        "series": "The Photo Journal Guide to Comic Books (v01-v04)(1990-1991)"
+    },
+    {
+        "name": "The Prisoner  The Uncertainty Machine 2018 (110110)",
+        "series": "The Prisoner  The Uncertainty Machine 2018 (110110)"
+    },
+    {
+        "name": "The Remarkable Worlds of Professor Phineas B. Fuddle",
+        "series": "The Remarkable Worlds of Professor Phineas B. Fuddle"
+    },
+    {
+        "name": "The Revisionist 2016 (90886)",
+        "series": "The Revisionist 2016 (90886)"
+    },
+    {
+        "name": "The Rook",
+        "series": "The Rook"
+    },
+    {
+        "name": "The Secret History of D.B. Cooper",
+        "series": "The Secret History of D.B. Cooper"
+    },
+    {
+        "name": "The Secret Service",
+        "series": "The Secret Service"
+    },
+    {
+        "name": "The Shadow - Leviathan (2018).cbz",
+        "series": "The Shadow - Leviathan (2018).cbz"
+    },
+    {
+        "name": "The Sisterhood",
+        "series": "The Sisterhood"
+    },
+    {
+        "name": "The Six Million Dollar Man 2019 (117469)",
+        "series": "The Six Million Dollar Man 2019 (117469)"
+    },
+    {
+        "name": "The Spider",
+        "series": "The Spider"
+    },
+    {
+        "name": "The Spirit",
+        "series": "The Spirit"
+    },
+    {
+        "name": "The Straw Men",
+        "series": "The Straw Men"
+    },
+    {
+        "name": "The Sword",
+        "series": "The Sword"
+    },
+    {
+        "name": "The Tick 2017 (104827)",
+        "series": "The Tick 2017 (104827)"
+    },
+    {
+        "name": "The Trigan Empire",
+        "series": "The Trigan Empire"
+    },
+    {
+        "name": "The Umbrella Academy",
+        "series": "The Umbrella Academy"
+    },
+    {
+        "name": "The Unknown",
+        "series": "The Unknown"
+    },
+    {
+        "name": "The Unwritten",
+        "series": "The Unwritten"
+    },
+    {
+        "name": "The Vault",
+        "series": "The Vault"
+    },
+    {
+        "name": "The Voyages of SheBuccaneer",
+        "series": "The Voyages of SheBuccaneer"
+    },
+    {
+        "name": "The Weatherman",
+        "series": "The Weatherman"
+    },
+    {
+        "name": "Think Tank",
+        "series": "Think Tank"
+    },
+    {
+        "name": "Thomas Alsop",
+        "series": "Thomas Alsop"
+    },
+    {
+        "name": "Thorgal",
+        "series": "Thorgal"
+    },
+    {
+        "name": "Tintin",
+        "series": "Tintin"
+    },
+    {
+        "name": "Titanium Rain",
+        "series": "Titanium Rain"
+    },
+    {
+        "name": "Tokyo Storm Warning",
+        "series": "Tokyo Storm Warning"
+    },
+    {
+        "name": "Tom Strong",
+        "series": "Tom Strong"
+    },
+    {
+        "name": "Top 10",
+        "series": "Top 10"
+    },
+    {
+        "name": "Transhuman",
+        "series": "Transhuman"
+    },
+    {
+        "name": "Transmetropolitan",
+        "series": "Transmetropolitan"
+    },
+    {
+        "name": "True Faith",
+        "series": "True Faith"
+    },
+    {
+        "name": "Truth  Justin  and the American Way",
+        "series": "Truth  Justin  and the American Way"
+    },
+    {
+        "name": "Turf",
+        "series": "Turf"
+    },
+    {
+        "name": "UFOlogy",
+        "series": "UFOlogy"
+    },
+    {
+        "name": "Understanding Comics",
+        "series": "Understanding Comics"
+    },
+    {
+        "name": "Unique",
+        "series": "Unique"
+    },
+    {
+        "name": "Universal War One",
+        "series": "Universal War One"
+    },
+    {
+        "name": "Unknown Soldier",
+        "series": "Unknown Soldier"
+    },
+    {
+        "name": "Usagi Yojimbo",
+        "series": "Usagi Yojimbo"
+    },
+    {
+        "name": "Valerian",
+        "series": "Valerian"
+    },
+    {
+        "name": "Valient Universe",
+        "series": "Valient Universe"
+    },
+    {
+        "name": "Velvet",
+        "series": "Velvet"
+    },
+    {
+        "name": "Vimanarama",
+        "series": "Vimanarama"
+    },
+    {
+        "name": "Voodoo",
+        "series": "Voodoo"
+    },
+    {
+        "name": "Wanted",
+        "series": "Wanted"
+    },
+    {
+        "name": "War Heroes",
+        "series": "War Heroes"
+    },
+    {
+        "name": "War of the World War One",
+        "series": "War of the World War One"
+    },
+    {
+        "name": "War Story",
+        "series": "War Story"
+    },
+
+    {
+        "name": "Warblade",
+        "series": "Warblade"
+    },
+    {
+        "name": "Warlord of Mars",
+        "series": "Warlord of Mars"
+    },
+    {
+        "name": "Welcome Back",
+        "series": "Welcome Back"
+    },
+    {
+        "name": "Welcome to Tranquility",
+        "series": "Welcome to Tranquility"
+    },
+    {
+        "name": "Wetworks",
+        "series": "Wetworks"
+    },
+    {
+        "name": "Whiteout",
+        "series": "Whiteout"
+    },
+    {
+        "name": "WildC.A.T.s",
+        "series": "WildC.A.T.s"
+    },
+    {
+        "name": "WildStorm",
+        "series": "WildStorm"
+    },
+ 
+    {
+        "name": "Little Nemo",
+        "series": "Little Nemo"
+    },
+    {
+        "name": "Wisdom",
+        "series": "Wisdom"
+    },
+    {
+        "name": "Witchblade",
+        "series": "Witchblade"
+    },
+    {
+        "name": "Witcher",
+        "series": "Witcher"
+    },
+    {
+        "name": "Wonderland",
+        "series": "Wonderland"
+    },
+    {
+        "name": "WorldStorm",
+        "series": "WorldStorm"
+    },
+    {
+        "name": "Wunderwaffen",
+        "series": "Wunderwaffen"
+    },
+    {
+        "name": "X Isle",
+        "series": "X Isle"
+    },
+    {
+        "name": "XIII",
+        "series": "XIII"
+    },
+    {
+        "name": "Yenny",
+        "series": "Yenny"
+    },
+    {
+        "name": "Your Name",
+        "series": "Your Name"
+    },
+    {
+        "name": "Ythaq",
+        "series": "Ythaq"
+    },
+    {
+        "name": "Zealot",
+        "series": "Zealot"
+    },
+    {
+        "name": "Ziggy Pig",
+        "series": "Ziggy Pig"
+    }
+]

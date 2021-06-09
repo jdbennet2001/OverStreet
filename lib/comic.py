@@ -4,6 +4,8 @@ cb* utilities
 import zipfile
 import tempfile
 import json
+import filetype
+
 from pathlib import PurePosixPath
 from redis import Redis
 
@@ -42,7 +44,7 @@ def _extract_rar_cover(archive):
 
     # What the what?
     if not images:
-        raise( f'No cover image found for {archive}, pages are {files}')
+        raise Exception( f'No cover image found for {archive}, pages are {files}')
   
     # Extract and return the first page
     image_data = rar.read(images[0])
@@ -120,7 +122,14 @@ def add_tag(tag_data, path_to_archive, tag_file=TAG_FILE):
         print( f' ==> tag ==> {path.basename(path_to_tmp_file)} ==> {path_to_archive}')
         insert( path_to_tmp_file, path_to_archive)
         
-        
+
+def get_tags(path_to_archive):
+
+    with zipfile.ZipFile(path_to_archive, 'r') as myzip:
+        tagdata = myzip.read(TAG_FILE)
+
+    return json.loads(tagdata)
+
 
 def insert( path_to_file, path_to_archive):
 
@@ -191,5 +200,15 @@ def target_name(metadata):
 
     cname = f"{volume_name} #{issue_number} ({metadata['cover_date']})"
     target = f"{cname} - {name}" if name else cname
+    target = target.replace('/', '-')
+    target = target.replace('?', '')
+    target = target.replace(':', ' ')
     return f'{target}.cbz'
  
+def type(path_to_archive):
+    try:
+         extension = filetype.guess(path_to_archive).extension
+         return extension
+    except Exception as e:
+        print( f' ==> {path_to_archive} ==> Invalid File Type')
+        return None

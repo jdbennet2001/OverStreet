@@ -35,16 +35,25 @@ SCORE_THRESHOLD = 0.95 # Threshold for declaring a match with a given comic
 
 REDIS_DATA = 'score-data'
 
+
+FILTERED_PUBLISHERS = ['Panini Comics', 'Abril', 'Planeta DeAgostini', 'Editorial Televisa']
+
 def pipeline(directory):
 
     # Get the new list...
     files = contents(directory)
 
-    # Drop manga, not classifiable
+    # Drop series known to be untaggable 
     comics = [x for x in files if not 'manga' in x]
+    comics = [x for x in files if not 'Trigan' in x]
+    comics = [x for x in files if not 'PS238' in x]
+    comics = [x for x in files if not 'Strange Tales' in x]
 
     # Comic Vine issue / volume information
     cvIssues = hashes()
+
+    # Take out the European copies
+    cvIssues = [x for x in cvIssues if not x['publisher'] in FILTERED_PUBLISHERS]
 
     results = []
 
@@ -53,16 +62,16 @@ def pipeline(directory):
 
 
         try:
-            
+
+            if rs.hexists(REDIS_DATA, comic):
+                print( f'==> skipping ==> {basename} ==> redis')
+                continue
+
             mtime = path.getmtime(comic) 
 
             comic = convert_file(comic)
 
             basename = path.basename(comic)
-
-            if rs.hexists(REDIS_DATA, comic):
-                print( f'==> skipping ==> {basename} ==> redis')
-                continue
 
             if type(comic) != 'zip':
                 print( f'==> skipping ==> {basename} ==> bad type')
@@ -78,7 +87,7 @@ def pipeline(directory):
                 match = match_by_label(comic)
                 
                 # Good enough, tag it now
-                add_tag(match, comic, 'tag.json') 
+                add_tag(match, comic) 
 
             else:
                 match = match_by_cover(comic, cvIssues)
@@ -160,6 +169,7 @@ def match_by_cover(comic, cvIssues):
     scores.sort(key=get_distance)
 
     match = scores[0]
+    match.update( {'page_count': page_count, 'basename' : basename, 'comic': comic})
 
     return  match
 

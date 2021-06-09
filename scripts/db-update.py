@@ -275,8 +275,8 @@ if not path.exists( path.join(args.disk, 'education')):
     exit(-3)
 
 
+
+importHashes(args.disk)
 importIssues(args.disk)
 importVolumes(args.disk)
-importHashes(args.disk)
-
 
