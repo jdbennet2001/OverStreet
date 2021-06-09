@@ -8,6 +8,9 @@ import shutil
 import argparse
 
 from os import path, listdir, makedirs
+from redis import StrictRedis
+
+rs = StrictRedis(decode_responses='utf-8')
 
 proj_path = path.abspath('.')
 sys.path.append(proj_path)  # VSCode hackery, ensure project relative imports work
@@ -24,7 +27,7 @@ PUBLISHER_DIRECTORIES = ['DC Comics', 'Marvel', 'Other']
 
 def execute(catalog):
 
-    # 
+    
     volumes = getVolumes(catalog)
 
     # Find comics that need to be filed
@@ -50,16 +53,23 @@ def execute(catalog):
 # Build a dictionary of volume - location for all known volumes
 def getVolumes(catalog):
 
+    VOLUME_KEY = 'volume_map'
+
+    # Use cached data..
+    if rs.exists(VOLUME_KEY):
+        return rs.hgetall(VOLUME_KEY)
+
+    # Use Redis as a temporary cache to help in debugging`
     comics = contents(catalog)
     comics = [x for x in comics if volumeNumber(x) is not None]
 
-    volumes = {}
-
     for comic in comics:
         volume = volumeNumber(comic)    
-        volumes[volume] = path.dirname(comic)
+        rs.hset(VOLUME_KEY, volume, path.dirname(comic) )
 
-    return volumes
+    return rs.hgetall(VOLUME_KEY)
+    
+
 
 
 # Returns the volume number from a given comic's parent directory
