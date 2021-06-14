@@ -95,7 +95,7 @@ Return all (mising) covers
 '''
 def download_covers(issues, covers_dir):
 
-    covers = listdir(covers_dir)
+    covers = listdir(covers_dir) if path.exists(covers_dir) else []
 
     for i, issue in enumerate(issues):
 
@@ -304,12 +304,12 @@ def sync(directory, apikey):
         file =  path.join(directory, f'volumes/{volume}.json')
         print(f"==> {volume} ==> {file}")
 
-        with open(file, 'w') as outfile:
+        with open(file, 'w', encoding='utf-8') as outfile:
             json.dump(data, outfile, indent=4)
 
  
     # Download missing covers
-    for month in months:
+    for month in history:
 
         issue_file =  path.join(directory, f'issues/{month}.json')
         
@@ -319,8 +319,8 @@ def sync(directory, apikey):
         else:
             print( f' ==> checking ==> {issue_file} ==> covers')
 
-        with open(issue_file, 'r') as infile:
-            issues = json.load(infile)
+        with open(issue_file, 'r', encoding='utf-8') as infile:
+            issues = json.load(infile, )
         
         download_covers(issues, path.join(directory, f"covers/{month}") )
 

@@ -27,10 +27,11 @@ PUBLISHER_DIRECTORIES = ['DC Comics', 'Marvel', 'Other']
 
 def execute(catalog):
 
+   # Find comics that need to be filed
+    comics = waiting_comics(catalog)
+
     volumes = getVolumes(catalog)
 
-    # Find comics that need to be filed
-    comics = waiting_comics(catalog)
 
     # Get a list of known series for each publisher
     DC_series = listdir( path.join(catalog, 'DC Comics') )
@@ -85,11 +86,16 @@ TRADE_COUNT_PAGE_THRESHOLD = 112
 # Basic filing logic
 def move(comic, series, directory, tags, volumes):
     volume_id = tags['volume_id']
+
     volume_name = tags['volume_name']
+    volume_name = volume_name.replace(':', '-')
+
     volume_start = tags['volume_start']
     page_count = tags['page_count']
 
     basename = path.basename(comic)
+    basename = basename.replace(':', '-')
+
     series_dir = find_series(series, volume_name)
 
     # Trade paperbacks have a special filing structure
@@ -135,7 +141,7 @@ def find_series(series, volume_name):
 def mv(source, destination, reason='sys-call'):
 
     # Remove non-ascii characters
-    destination = destination.replace(':', '-')
+  
     destination = destination.replace('?', '')
     destination = destination.replace('"', '-')
 

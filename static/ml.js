@@ -59,18 +59,14 @@ async function renderIssue(basename, location, page_count){
 
 async function renderSuggestion(match){
 
-    let {cover_date, distance, description, publisher, id, month, url, issue_number, volume_count_of_issues, volume_name, name} = match
+    let {cover_date, image, distance, description, publisher, id, month, url, issue_number, volume_count_of_issues, volume_name, name} = match
     
-    let image = `/Volumes/Seagate Expansion Drive/education/data/comic-vine/covers/${month}/${id}.jpg`
-        image = encodeURIComponent(image)
-        image = encodeURIComponent(image)
-
     let publisher_class = (publisher == 'DC Comics' || publisher == 'Marvel') ? 'pub-main' : 'pub-other'
     let trade_class = (issue_number == 1 && volume_count_of_issues == 1) ? 'trade' : 'single'
 
     let right_pane = $('#right')
     let cover = $('<div>', {class: 'cover'}).appendTo(right_pane)
-                $('<img />', { src: `/file/${image}`, class: `cover-image ${publisher_class}` }).appendTo(cover)
+                $('<img />', { src: image, class: `cover-image ${publisher_class}` }).appendTo(cover)
 
     let details = $('<div>', { "class": 'details' }).appendTo(right_pane);
 

@@ -203,9 +203,9 @@ def queryExistingHashes():
     curr.execute('SELECT name from pHash')
 
     results = curr.fetchmany(250)
-    while results is not None:
+    while results:
         names = names + results
-        results = curr.fetchone()
+        results = curr.fetchmany(250)
 
     curr.close()
 

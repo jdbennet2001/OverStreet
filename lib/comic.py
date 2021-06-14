@@ -105,11 +105,16 @@ HASH_FILE = 'pending.json'
 
 def has_tag(path_to_archive):
 
-    # Assume ZIP archives
-    with zipfile.ZipFile(path_to_archive, 'r') as myzip:
-        pagelist = myzip.namelist()
+    try:
 
-        return TAG_FILE in pagelist or HASH_FILE in pagelist
+        # Assume ZIP archives
+        with zipfile.ZipFile(path_to_archive, 'r') as myzip:
+            pagelist = myzip.namelist()
+
+            return TAG_FILE in pagelist or HASH_FILE in pagelist
+
+    except:
+        return None
 
 def add_tag(tag_data, path_to_archive, tag_file=TAG_FILE):
 
@@ -207,7 +212,8 @@ def target_name(metadata):
  
 def type(path_to_archive):
     try:
-         extension = filetype.guess(path_to_archive).extension
+         guess = filetype.guess(path_to_archive)
+         extension = guess.extension
          return extension
     except Exception as e:
         print( f' ==> {path_to_archive} ==> Invalid File Type')
